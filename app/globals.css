@@ -4,5 +4,68 @@
 
 body {
   color: white;
-  background: rgb(32, 32, 32);
+  background: rgb(30, 30, 37);
+  z-index: 0;
+}
+.background {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 120px 24px 160px 24px;
+  pointer-events: none;
+}
+@media screen and (max-width: 640px) {
+  .background {
+    padding: 0;
+  }
+}
+
+.background:after {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgb(30, 30, 37) 100%);
+    position: absolute;
+  content: "";
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.background:before {
+  content: "";
+  background-image: url("/assets/images/grid.svg");
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.3;
+  /* opacity: 1; */
+}
+
+.mesh-gradient {
+  /* content: "";
+    position: absolute;
+    top: 0;
+  z-index: 3;
+  background-image: radial-gradient(
+      at 27% 37%,
+      rgb(30, 30, 37) 0px,
+      transparent 0%
+    ),
+    radial-gradient(at 62% 99%, hsla(201, 88%, 69%, 1) 0, hsla(201, 88%, 69%, 0) 50%),
+radial-gradient(at 90% 21%, hsla(224, 88%, 62%, 1) 0, hsla(224, 88%, 62%, 0) 50%),
+radial-gradient(at 49% 46%, hsla(166, 85%, 63%, 1) 0, hsla(166, 85%, 63%, 0) 50%),
+radial-gradient(at 87% 93%, hsla(204, 93%, 57%, 1) 0, hsla(204, 93%, 57%, 0) 50%),
+radial-gradient(at 97% 6%, hsla(234, 95%, 68%, 1) 0, hsla(234, 95%, 68%, 0) 50%),
+radial-gradient(at 35% 67%, hsla(261, 91%, 65%, 1) 0, hsla(261, 91%, 65%, 0) 50%);
+  width: 100%;
+  height: 100%;
+  filter: blur(100px) saturate(100%);
+  opacity: 0.15; */
+}
+
+.app{
+  @apply z-10 relative;
 }
