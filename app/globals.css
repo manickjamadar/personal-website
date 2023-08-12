@@ -3,49 +3,23 @@
 @tailwind utilities;
 
 body {
-  color: white;
-  background: rgb(30, 30, 37);
-  z-index: 0;
+  @apply text-white bg-primary-950 z-0;
 }
 .background {
-  width: 100vw;
-  min-height: 100vh;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  padding: 120px 24px 160px 24px;
-  pointer-events: none;
+  @apply w-screen min-h-screen fixed flex justify-center pointer-events-none;
 }
-@media screen and (max-width: 640px) {
-  .background {
-    padding: 0;
-  }
-}
-
-.background:after {
-  background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgb(30, 30, 37) 100%);
-    position: absolute;
-  content: "";
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
-
 .background:before {
-  content: "";
+  @apply content-[""] z-10 absolute w-full h-full opacity-30;
   background-image: url("/assets/images/grid.svg");
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0.3;
-  /* opacity: 1; */
+}
+.background:after {
+  @apply absolute content-[""] z-20 w-full h-full top-0;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgb(30, 30, 37) 100%);
 }
 
-.mesh-gradient {
-  /* content: "";
+
+/* .mesh-gradient {
+  content: "";
     position: absolute;
     top: 0;
   z-index: 3;
@@ -63,8 +37,8 @@ radial-gradient(at 35% 67%, hsla(261, 91%, 65%, 1) 0, hsla(261, 91%, 65%, 0) 50%
   width: 100%;
   height: 100%;
   filter: blur(100px) saturate(100%);
-  opacity: 0.15; */
-}
+  opacity: 0.15;
+} */
 
 .app{
   @apply z-10 relative;
