@@ -3,7 +3,8 @@ import Container from "./components/Container";
 import Header from "./components/sections/header";
 import Hero from "./components/sections/hero";
 import Spacer from "./components/spacer";
-import Specilization from "./components/sections/specilization";
+import SpecilizationSection from "./components/sections/specilizationSection";
+import SkillSection from "./components/sections/skillSection";
 
 const HomePage = () => {
   return (
@@ -12,7 +13,9 @@ const HomePage = () => {
       <Spacer vertical={90} />
       <Hero />
       <Spacer vertical={90} />
-      <Specilization />
+      <SpecilizationSection />
+      <Spacer vertical={90} />
+      <SkillSection />
     </Container>
   );
 };
