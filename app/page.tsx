@@ -1,11 +1,13 @@
+import Image from "next/image";
 import React from "react";
+import LinkPath from "./utils/linkPath";
+import Container from "./components/Container";
 
 const HomePage = () => {
   return (
-    <div className="h-screen w-screen flex justify-center items-center flex-col gap-6">
-      <p className="text-4xl lg:text-6xl">Coming Soon</p>
-      <p className="text-lg lg:text-4xl">Something Amazing on the way</p>
-    </div>
+    <Container>
+      <Image src={LinkPath.logo} width={50} height={50} alt="Main Logo" />
+    </Container>
   );
 };
 
