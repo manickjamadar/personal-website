@@ -46,3 +46,9 @@ radial-gradient(at 35% 67%, hsla(261, 91%, 65%, 1) 0, hsla(261, 91%, 65%, 0) 50%
 .primary-btn{
   @apply bg-primary-800 text-white px-4 py-2 rounded-md;
 }
+.primary-outline-btn{
+  @apply bg-transparent text-primary-800 px-4 py-2 rounded-md border border-primary-800;
+}
+.text-orange-gradient{
+  @apply bg-gradient-to-r from-pink-500 to-orange-600 bg-clip-text text-transparent;
+}
