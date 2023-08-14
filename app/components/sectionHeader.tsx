@@ -1,12 +1,12 @@
 import React from "react";
 interface Props {
-  children: React.ReactNode;
+  title: React.ReactNode;
   subtitle: string;
 }
-const SectionHeader: React.FC<Props> = ({ children, subtitle }) => {
+const SectionHeader: React.FC<Props> = ({ title, subtitle }) => {
   return (
     <div className="flex flex-col gap-3 items-start">
-      <p className="text-3xl border-b-4 border-primary pb-3">{children}</p>
+      <p className="text-3xl border-b-4 border-primary pb-3">{title}</p>
       <p>{subtitle}</p>
     </div>
   );
