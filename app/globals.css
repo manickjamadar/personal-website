@@ -41,5 +41,5 @@ radial-gradient(at 35% 67%, hsla(261, 91%, 65%, 1) 0, hsla(261, 91%, 65%, 0) 50%
 } */
 
 .app{
-  @apply z-10 relative;
+  @apply z-10 relative min-h-screen flex flex-col justify-between;
 }

@@ -18,7 +18,12 @@ export default function RootLayout({
         <div className="background">
           <div className="mesh-gradient"></div>
         </div>
-        <div className="app">{children}</div>
+        <div className="app">
+          <div className="main">{children}</div>
+          <div className="footer bg-primary-900 p-4">
+            &copy; 2023 Manick Jamadar All Rights Reserved
+          </div>
+        </div>
       </body>
     </html>
   );
