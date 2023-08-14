@@ -1,3 +1,4 @@
+import Footer from "./components/sections/footer";
 import "./globals.css";
 import type { Metadata } from "next";
 
@@ -20,9 +21,7 @@ export default function RootLayout({
         </div>
         <div className="app">
           <div className="main">{children}</div>
-          <div className="footer bg-primary-900 p-4">
-            &copy; 2023 Manick Jamadar All Rights Reserved
-          </div>
+          <Footer />
         </div>
       </body>
     </html>

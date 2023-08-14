@@ -1,12 +1,11 @@
-import Image from "next/image";
 import React from "react";
-import LinkPath from "./utils/linkPath";
 import Container from "./components/Container";
+import Header from "./components/sections/header";
 
 const HomePage = () => {
   return (
     <Container>
-      <Image src={LinkPath.logo} width={50} height={50} alt="Main Logo" />
+      <Header />
     </Container>
   );
 };
