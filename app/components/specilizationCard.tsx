@@ -1,14 +1,10 @@
 import React from "react";
+import { ISpecilization } from "../data/specilizations";
 interface Props {
-  title?: string;
-  description?: string;
-  icon: React.ReactNode;
+  specilization: ISpecilization;
 }
-const SpecilizationCard: React.FC<Props> = ({
-  title = "No Title",
-  description = "No Description",
-  icon,
-}) => {
+const SpecilizationCard: React.FC<Props> = ({ specilization }) => {
+  const { description, icon, title } = specilization;
   return (
     <div className="flex flex-col gap-4 max-w-xs items-start">
       <div className="text-4xl text-primary">{icon}</div>

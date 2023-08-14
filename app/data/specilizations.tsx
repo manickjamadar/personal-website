@@ -1,11 +1,11 @@
 import { FaDatabase } from "react-icons/fa";
 import { MdDesktopWindows, MdDraw } from "react-icons/md";
-
-const mySpecilizations: {
+export interface ISpecilization {
   title: string;
   description: string;
   icon: React.ReactNode;
-}[] = [
+}
+const mySpecilizations: ISpecilization[] = [
   {
     title: "Frontend Development",
     description:
