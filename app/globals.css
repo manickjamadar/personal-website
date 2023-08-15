@@ -52,3 +52,6 @@ radial-gradient(at 35% 67%, hsla(261, 91%, 65%, 1) 0, hsla(261, 91%, 65%, 0) 50%
 .text-orange-gradient{
   @apply bg-gradient-to-r from-pink-500 to-orange-600 bg-clip-text text-transparent;
 }
+.icon-btn{
+  @apply bg-gray-700 text-white px-3 py-3 rounded;
+}
