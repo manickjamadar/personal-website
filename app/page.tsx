@@ -6,6 +6,7 @@ import Spacer from "./components/spacer";
 import SpecilizationSection from "./components/sections/specilizationSection";
 import SkillSection from "./components/sections/skillSection";
 import ProjectSection from "./components/sections/projectSection";
+import TestimonialSection from "./components/sections/testimonialSection";
 
 const HomePage = () => {
   return (
@@ -19,6 +20,8 @@ const HomePage = () => {
       <SkillSection />
       <Spacer vertical={90} />
       <ProjectSection />
+      <Spacer vertical={90} />
+      <TestimonialSection />
     </Container>
   );
 };
