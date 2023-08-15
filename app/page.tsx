@@ -5,6 +5,7 @@ import Hero from "./components/sections/hero";
 import Spacer from "./components/spacer";
 import SpecilizationSection from "./components/sections/specilizationSection";
 import SkillSection from "./components/sections/skillSection";
+import ProjectSection from "./components/sections/projectSection";
 
 const HomePage = () => {
   return (
@@ -16,6 +17,8 @@ const HomePage = () => {
       <SpecilizationSection />
       <Spacer vertical={90} />
       <SkillSection />
+      <Spacer vertical={90} />
+      <ProjectSection />
     </Container>
   );
 };
