@@ -6,15 +6,25 @@ export interface ISkill {
   color: string;
   category: "frontend" | "backend" | "other";
 }
-
-const mySkills: ISkill[] = [
-  { name: "Html5", icon: <FaHtml5 />, color: "#df5f2c", category: "frontend" },
-  { name: "NodeJs", icon: <FaNodeJs />, color: "#0baa5b", category: "backend" },
-  {
+export class Skill {
+  static html: ISkill = {
+    name: "Html5",
+    icon: <FaHtml5 />,
+    color: "#df5f2c",
+    category: "frontend",
+  };
+  static nodeJs: ISkill = {
+    name: "NodeJs",
+    icon: <FaNodeJs />,
+    color: "#0baa5b",
+    category: "backend",
+  };
+  static firebase: ISkill = {
     name: "Firebase",
     icon: <SiFirebase />,
     color: "#dbb023",
     category: "other",
-  },
-];
+  };
+}
+const mySkills: ISkill[] = [Skill.html, Skill.firebase, Skill.nodeJs];
 export default mySkills;
