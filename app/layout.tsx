@@ -6,9 +6,6 @@ export const metadata: Metadata = {
   title: "Manick Jamadar - Full Stack Developer",
   description:
     "My Name is Manick Jamadar. I am full stack web develoer, mobile app developer and also UI/UX Designer",
-  icons: {
-    icon: "/assets/images/manick-logo.svg",
-  },
 };
 
 export default function RootLayout({
