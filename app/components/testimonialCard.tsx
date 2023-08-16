@@ -21,7 +21,7 @@ const TestimonialCard: React.FC<Props> = ({ testimonial }) => {
       />
       <Spacer vertical={10} />
       <div className="flex gap-3 items-center text-2xl">
-        <p>{name}</p>
+        <h3>{name}</h3>
         <Link href={profileUrl} target="_blank">
           <RxExternalLink />
         </Link>
