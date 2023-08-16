@@ -8,6 +8,7 @@ import SkillSection from "./components/sections/skillSection";
 import ProjectSection from "./components/sections/projectSection";
 import TestimonialSection from "./components/sections/testimonialSection";
 import FAQSection from "./components/sections/faqSection";
+import ContactSection from "./components/sections/contactSection";
 
 const HomePage = () => {
   return (
@@ -25,6 +26,8 @@ const HomePage = () => {
       <TestimonialSection />
       <Spacer vertical={90} />
       <FAQSection />
+      <Spacer vertical={90} />
+      <ContactSection />
     </Container>
   );
 };
