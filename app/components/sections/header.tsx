@@ -18,8 +18,8 @@ const Header: React.FC<Props> = ({ activeLink = "/#", onLinkClick }) => {
     onLinkClick && onLinkClick(url);
   };
   return (
-    <>
-      <div className="flex items-center justify-between fixed top-0 left-0 w-full box-border">
+    <div className="w-full mx-auto max-w-7xl px-8 sm:px-16 md:px-24 py-4 ">
+      <div className="flex items-center justify-between">
         <Logo />
         <div className="gap-8 items-center hidden min-[900px]:flex">
           <nav className="flex gap-6 ">
@@ -58,7 +58,7 @@ const Header: React.FC<Props> = ({ activeLink = "/#", onLinkClick }) => {
           activeLink={activeLink}
         />
       )}
-    </>
+    </div>
   );
 };
 

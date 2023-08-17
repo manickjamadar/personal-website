@@ -13,11 +13,16 @@ import ContactSection from "./components/sections/contactSection";
 
 const HomePage = () => {
   const [activeLink, setActiveLink] = useState("/#");
+  const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section"); // Assuming your sections have the <section> tag
       const scrollPosition = window.scrollY;
-
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
       sections.forEach((section) => {
         const sectionTop = section.offsetTop - 100; // Adjust the offset if needed
         const sectionBottom = sectionTop + section.offsetHeight;
@@ -43,37 +48,46 @@ const HomePage = () => {
     };
   }, []);
   return (
-    <Container>
-      <Header activeLink={activeLink} />
-      <section id="home">
-        <Spacer vertical={90} />
-        <Hero />
-      </section>
-      <section>
-        <Spacer vertical={90} />
-        <SpecilizationSection />
-      </section>
-      <section id="skills">
-        <Spacer vertical={90} />
-        <SkillSection />
-      </section>
-      <section id="projects">
-        <Spacer vertical={90} />
-        <ProjectSection />
-      </section>
-      <section id="testimonials">
-        <Spacer vertical={90} />
-        <TestimonialSection />
-      </section>
-      <section id="faq">
-        <Spacer vertical={90} />
-        <FAQSection />
-      </section>
-      <section>
-        <Spacer vertical={90} />
-        <ContactSection />
-      </section>
-    </Container>
+    <div>
+      <div
+        className={`fixed top-0 left-0 w-full ${
+          scrolled &&
+          "bg-primary-500 bg-opacity-10 z-50 backdrop-filter backdrop-blur-xl border-b border-white/10"
+        }`}
+      >
+        <Header activeLink={activeLink} />
+      </div>
+      <Container>
+        <section id="home">
+          <Spacer vertical={120} />
+          <Hero />
+        </section>
+        <section>
+          <Spacer vertical={90} />
+          <SpecilizationSection />
+        </section>
+        <section id="skills">
+          <Spacer vertical={90} />
+          <SkillSection />
+        </section>
+        <section id="projects">
+          <Spacer vertical={90} />
+          <ProjectSection />
+        </section>
+        <section id="testimonials">
+          <Spacer vertical={90} />
+          <TestimonialSection />
+        </section>
+        <section id="faq">
+          <Spacer vertical={90} />
+          <FAQSection />
+        </section>
+        <section>
+          <Spacer vertical={90} />
+          <ContactSection />
+        </section>
+      </Container>
+    </div>
   );
 };
 
