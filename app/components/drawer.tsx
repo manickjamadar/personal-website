@@ -36,7 +36,6 @@ const Drawer: React.FC<Props> = ({ onClose, links }) => {
               key={link.name}
               href={link.url}
               className="hover:bg-primary-500 p-4 px-8"
-              target={link.target}
               onClick={closeDrawer}
             >
               {link.name}
@@ -47,11 +46,11 @@ const Drawer: React.FC<Props> = ({ onClose, links }) => {
       <div className="flex flex-col items-center gap-4">
         <button className="primary-btn">Book Meeting</button>
         <a
-          href={LinkPath.projects}
+          href={LinkPath.resume}
+          target="_blank"
           className="primary-outline-btn"
-          onClick={closeDrawer}
         >
-          See My Work
+          Resume
         </a>
         <SocialLinks />
       </div>
