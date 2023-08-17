@@ -1,6 +1,7 @@
 class LinkPath {
   static logo = "/assets/images/manick-logo.svg";
   static home = "/";
+  static hashHome = "/#";
   static skills = "/#skills";
   static projects = "/#projects";
   static testimonials = "/#testimonials";
