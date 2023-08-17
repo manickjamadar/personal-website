@@ -16,18 +16,30 @@ const HomePage = () => {
       <Header />
       <Spacer vertical={90} />
       <Hero />
-      <Spacer vertical={90} />
-      <SpecilizationSection />
-      <Spacer vertical={90} />
-      <SkillSection />
-      <Spacer vertical={90} />
-      <ProjectSection />
-      <Spacer vertical={90} />
-      <TestimonialSection />
-      <Spacer vertical={90} />
-      <FAQSection />
-      <Spacer vertical={90} />
-      <ContactSection />
+      <div id="specilization">
+        <Spacer vertical={90} />
+        <SpecilizationSection />
+      </div>
+      <div id="skills">
+        <Spacer vertical={90} />
+        <SkillSection />
+      </div>
+      <div id="projects">
+        <Spacer vertical={90} />
+        <ProjectSection />
+      </div>
+      <div id="testimonials">
+        <Spacer vertical={90} />
+        <TestimonialSection />
+      </div>
+      <div id="faq">
+        <Spacer vertical={90} />
+        <FAQSection />
+      </div>
+      <div>
+        <Spacer vertical={90} />
+        <ContactSection />
+      </div>
     </Container>
   );
 };

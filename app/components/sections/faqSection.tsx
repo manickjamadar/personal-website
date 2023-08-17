@@ -6,7 +6,7 @@ import FAQCard from "../faqCard";
 
 const FAQSection = () => {
   return (
-    <div id="faq">
+    <div>
       <SectionHeader
         title="Frequently Asked Questions"
         subtitle="If you have any questions about me here is the answers"

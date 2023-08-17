@@ -7,7 +7,7 @@ import CategoryFilter from "../categoryFilter";
 import mySkills from "@/app/data/skills";
 const SkillSection = () => {
   return (
-    <div id="skills" className="flex flex-col gap-6 items-center">
+    <div className="flex flex-col gap-6 items-center">
       <SectionHeader
         title="My Creative Skills"
         subtitle="Check out my awesome creative skills"

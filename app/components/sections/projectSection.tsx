@@ -6,7 +6,7 @@ import myProjects from "@/app/data/projects";
 
 const ProjectSection = () => {
   return (
-    <div id="projects" className="flex flex-col gap-6 items-center">
+    <div className="flex flex-col gap-6 items-center">
       <SectionHeader
         title={
           <span>
