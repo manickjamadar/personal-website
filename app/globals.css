@@ -1,8 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+html{
+  scroll-behavior: smooth;
+}
 body {
+  scroll-behavior: smooth;
   @apply text-white bg-primary-950 z-0;
 }
 .background {
