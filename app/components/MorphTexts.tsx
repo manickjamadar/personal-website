@@ -111,7 +111,7 @@ const MorphTexts: React.FC<Props> = ({ texts, placeholder }) => {
           className="font-bold text-7xl text-orange-gradient absolute top-0 bottom-0 w-full flex justify-center items-center"
         ></div>
       </div>
-      <div className="text-7xl font-bold text-transparent">
+      <div className="text-7xl font-bold text-transparent leading-[1.3]">
         {placeholder ? placeholder : getLongestText(texts)}
       </div>
       <svg id="filters" className="absolute top-0 bottom-0 w-full">
