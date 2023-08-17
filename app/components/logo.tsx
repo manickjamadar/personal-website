@@ -1,16 +1,12 @@
 import Image from "next/image";
 import React from "react";
+import LinkPath from "../utils/linkPath";
 interface Props {
   size?: number;
 }
 const Logo: React.FC<Props> = ({ size = 50 }) => {
   return (
-    <Image
-      src={"/assets/images/manick-logo.svg"}
-      width={size}
-      height={size}
-      alt="Manick Logo"
-    />
+    <Image src={LinkPath.logo} width={size} height={size} alt="Manick Logo" />
   );
 };
 
