@@ -5,18 +5,21 @@ import navLinks from "@/app/data/navLinks";
 import { RiMenu4Fill } from "react-icons/ri";
 import Drawer from "../drawer";
 import LinkPath from "@/app/utils/linkPath";
-const Header = () => {
+interface Props {
+  activeLink?: string;
+  onLinkClick?: (url: string) => void;
+}
+const Header: React.FC<Props> = ({ activeLink = "/#", onLinkClick }) => {
   const [drawerVisible, setDrawerVisible] = useState(false);
-  const [activeLink, setActiveLink] = useState("/#");
   const openDrawer = () => setDrawerVisible(true);
   const closeDrawer = () => setDrawerVisible(false);
-  const onLinkClick = (url: string) => {
+  const linkClickHandler = (url: string) => {
     closeDrawer();
-    setActiveLink(url);
+    onLinkClick && onLinkClick(url);
   };
   return (
     <>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between fixed top-0 left-0 w-full box-border">
         <Logo />
         <div className="gap-8 items-center hidden min-[900px]:flex">
           <nav className="flex gap-6 ">
@@ -29,7 +32,7 @@ const Header = () => {
                     ? "border-b-2 border-primary-500 pb-1"
                     : "text-white"
                 }`}
-                onClick={() => onLinkClick(link.url)}
+                onClick={() => linkClickHandler(link.url)}
               >
                 {link.name}
               </a>
@@ -51,7 +54,7 @@ const Header = () => {
         <Drawer
           links={navLinks}
           onClose={closeDrawer}
-          onLinkClick={onLinkClick}
+          onLinkClick={linkClickHandler}
           activeLink={activeLink}
         />
       )}
