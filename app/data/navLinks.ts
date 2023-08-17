@@ -1,6 +1,10 @@
 import LinkPath from "../utils/linkPath";
-
-const navLinks: { name: string; url: string; target: "_self" | "_blank" }[] = [
+export interface INavLink {
+  name: string;
+  url: string;
+  target: "_self" | "_blank";
+}
+const navLinks: INavLink[] = [
   { name: "Home", url: LinkPath.home, target: "_self" },
   { name: "Skills", url: LinkPath.skills, target: "_self" },
   { name: "Projects", url: LinkPath.projects, target: "_self" },
