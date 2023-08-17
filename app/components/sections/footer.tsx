@@ -3,6 +3,7 @@ import Logo from "../logo";
 import Link from "next/link";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import LinkPath from "@/app/utils/linkPath";
 const Footer = () => {
   const footerLinks = [{}];
   return (
@@ -15,9 +16,10 @@ const Footer = () => {
           <Link href={"/"}>Home</Link>
           <Link href={"/"}>Skills</Link>
           <Link href={"/"}>Work</Link>
-          <Link href={"/"}>Resume</Link>
         </div>
-        <button className="primary-btn">Download Resume</button>
+        <a className="primary-btn" href={LinkPath.resume} download={true}>
+          Download Resume
+        </a>
         <div className="flex gap-3">
           <div className="p-2 border rounded-full">
             <FaLinkedinIn />
