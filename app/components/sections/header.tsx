@@ -7,7 +7,7 @@ import Drawer from "../drawer";
 import LinkPath from "@/app/utils/linkPath";
 const Header = () => {
   const [drawerVisible, setDrawerVisible] = useState(false);
-  const [activeLink, setActiveLink] = useState("/");
+  const [activeLink, setActiveLink] = useState("/#");
   const openDrawer = () => setDrawerVisible(true);
   const closeDrawer = () => setDrawerVisible(false);
   const onLinkClick = (url: string) => {
