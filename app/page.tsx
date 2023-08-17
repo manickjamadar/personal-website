@@ -16,30 +16,30 @@ const HomePage = () => {
       <Header />
       <Spacer vertical={90} />
       <Hero />
-      <div id="specilization">
+      <section id="specilization">
         <Spacer vertical={90} />
         <SpecilizationSection />
-      </div>
-      <div id="skills">
+      </section>
+      <section id="skills">
         <Spacer vertical={90} />
         <SkillSection />
-      </div>
-      <div id="projects">
+      </section>
+      <section id="projects">
         <Spacer vertical={90} />
         <ProjectSection />
-      </div>
-      <div id="testimonials">
+      </section>
+      <section id="testimonials">
         <Spacer vertical={90} />
         <TestimonialSection />
-      </div>
-      <div id="faq">
+      </section>
+      <section id="faq">
         <Spacer vertical={90} />
         <FAQSection />
-      </div>
-      <div>
+      </section>
+      <section id="contact">
         <Spacer vertical={90} />
         <ContactSection />
-      </div>
+      </section>
     </Container>
   );
 };
