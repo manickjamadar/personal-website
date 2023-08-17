@@ -104,14 +104,25 @@ const MorphTexts: React.FC<Props> = ({ texts, placeholder }) => {
       >
         <div
           id="text1"
-          className="font-bold text-7xl text-orange-gradient absolute top-0 bottom-0 w-full flex justify-center items-center"
+          className="text-orange-gradient font-bold text-5xl sm:text-6xl md:text-7xl absolute top-0 bottom-0 w-full flex justify-center items-center"
+          style={{
+            lineHeight: 1.3,
+          }}
         ></div>
         <div
           id="text2"
-          className="font-bold text-7xl text-orange-gradient absolute top-0 bottom-0 w-full flex justify-center items-center"
+          className="text-orange-gradient font-bold text-5xl sm:text-6xl md:text-7xl absolute top-0 bottom-0 w-full flex justify-center items-center"
+          style={{
+            lineHeight: 1.3,
+          }}
         ></div>
       </div>
-      <div className="text-7xl font-bold text-transparent leading-[1.3]">
+      <div
+        className="font-bold text-5xl sm:text-6xl md:text-7xl text-transparent"
+        style={{
+          lineHeight: 1.3,
+        }}
+      >
         {placeholder ? placeholder : getLongestText(texts)}
       </div>
       <svg id="filters" className="absolute top-0 bottom-0 w-full">
