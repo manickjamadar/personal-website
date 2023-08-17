@@ -9,8 +9,13 @@ import { usePathname, useRouter } from "next/navigation";
 import LinkPath from "@/app/utils/linkPath";
 const Header = () => {
   const [drawerVisible, setDrawerVisible] = useState(false);
+  const [activeLink, setActiveLink] = useState("/");
   const openDrawer = () => setDrawerVisible(true);
   const closeDrawer = () => setDrawerVisible(false);
+  const onLinkClick = (url: string) => {
+    closeDrawer();
+    setActiveLink(url);
+  };
   return (
     <>
       <div className="flex items-center justify-between">
@@ -18,7 +23,16 @@ const Header = () => {
         <div className="gap-8 items-center hidden min-[900px]:flex">
           <nav className="flex gap-6 ">
             {navLinks.map((link) => (
-              <Link key={link.name} href={link.url}>
+              <Link
+                key={link.name}
+                href={link.url}
+                className={`${
+                  activeLink === link.url
+                    ? "border-b-2 border-primary-500 pb-1"
+                    : "text-white"
+                }`}
+                onClick={() => onLinkClick(link.url)}
+              >
                 {link.name}
               </Link>
             ))}
