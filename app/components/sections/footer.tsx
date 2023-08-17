@@ -1,9 +1,8 @@
 import React from "react";
 import Logo from "../logo";
 import Link from "next/link";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 import LinkPath from "@/app/utils/linkPath";
+import SocialLinks from "../socialLinks";
 const Footer = () => {
   const footerLinks = [{}];
   return (
@@ -20,17 +19,7 @@ const Footer = () => {
         <a className="primary-btn" href={LinkPath.resume} download={true}>
           Download Resume
         </a>
-        <div className="flex gap-3">
-          <div className="p-2 border rounded-full">
-            <FaLinkedinIn />
-          </div>
-          <div className="p-2 border rounded-full">
-            <MdEmail />
-          </div>
-          <div className="p-2 border rounded-full">
-            <FaGithub />
-          </div>
-        </div>
+        <SocialLinks />
       </div>
       <div className="p-4 border-t border-slate-400 flex flex-col md:flex-row item-center justify-between gap-3">
         <p className="text-center">
