@@ -50,14 +50,13 @@ const Header: React.FC<Props> = ({ activeLink = "/#", onLinkClick }) => {
           <RiMenu4Fill />
         </div>
       </div>
-      {drawerVisible && (
-        <Drawer
-          links={navLinks}
-          onClose={closeDrawer}
-          onLinkClick={linkClickHandler}
-          activeLink={activeLink}
-        />
-      )}
+      <Drawer
+        links={navLinks}
+        onClose={closeDrawer}
+        onLinkClick={linkClickHandler}
+        activeLink={activeLink}
+        visible={drawerVisible}
+      />
     </div>
   );
 };

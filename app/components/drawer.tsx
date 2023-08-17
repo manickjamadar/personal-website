@@ -5,21 +5,29 @@ import Logo from "./logo";
 import { INavLink } from "../data/navLinks";
 import LinkPath from "../utils/linkPath";
 import SocialLinks from "./socialLinks";
+import { motion } from "framer-motion";
 interface Props {
   onClose?: () => void;
   links: INavLink[];
   onLinkClick?: (url: string) => void;
   activeLink?: string;
+  visible?: boolean;
 }
 const Drawer: React.FC<Props> = ({
   onClose,
   links,
   onLinkClick,
   activeLink = "/",
+  visible = false,
 }) => {
   const closeDrawer = () => onClose && onClose();
   return (
-    <div className="fixed top-0 right-0 w-full h-screen bg-primary-900 max-w-md z-50 flex flex-col justify-between py-6">
+    <motion.div
+      initial={{ x: "100%" }}
+      animate={{ x: visible ? "0%" : "100%" }}
+      transition={{ duration: 0.2, ease: "easeInOut" }}
+      className="fixed top-0 right-0 w-full h-screen  max-w-md z-50 bg-primary-900 flex flex-col justify-between py-6"
+    >
       <div>
         <div
           className="text-white text-3xl cursor-pointer flex justify-end px-6"
@@ -62,7 +70,7 @@ const Drawer: React.FC<Props> = ({
         </a>
         <SocialLinks />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
