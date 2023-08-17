@@ -16,8 +16,7 @@ const TestimonialCard: React.FC<Props> = ({ testimonial }) => {
         width={100}
         height={100}
         alt={`${name} Profile Picture`}
-        objectFit="cover"
-        className="rounded-full"
+        className="rounded-full object-cover"
       />
       <Spacer vertical={10} />
       <div className="flex gap-3 items-center text-2xl">

@@ -18,8 +18,8 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
           <Image
             src={imageUrl}
             alt={`${title} Image`}
-            objectFit="cover"
             fill={true}
+            className="object-cover"
           />
         ) : (
           <div className="w-full h-full flex justify-center items-center">
