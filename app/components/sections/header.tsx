@@ -49,7 +49,14 @@ const Header = () => {
           <RiMenu4Fill />
         </div>
       </div>
-      {drawerVisible && <Drawer links={navLinks} onClose={closeDrawer} />}
+      {drawerVisible && (
+        <Drawer
+          links={navLinks}
+          onClose={closeDrawer}
+          onLinkClick={onLinkClick}
+          activeLink={activeLink}
+        />
+      )}
     </>
   );
 };

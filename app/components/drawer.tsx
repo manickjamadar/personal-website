@@ -9,8 +9,15 @@ import SocialLinks from "./socialLinks";
 interface Props {
   onClose?: () => void;
   links: INavLink[];
+  onLinkClick?: (url: string) => void;
+  activeLink?: string;
 }
-const Drawer: React.FC<Props> = ({ onClose, links }) => {
+const Drawer: React.FC<Props> = ({
+  onClose,
+  links,
+  onLinkClick,
+  activeLink = "/",
+}) => {
   const closeDrawer = () => onClose && onClose();
   return (
     <div className="fixed top-0 right-0 w-full h-screen bg-primary-900 max-w-md z-50 flex flex-col justify-between py-6">
@@ -35,8 +42,10 @@ const Drawer: React.FC<Props> = ({ onClose, links }) => {
             <Link
               key={link.name}
               href={link.url}
-              className="hover:bg-primary-500 p-4 px-8"
-              onClick={closeDrawer}
+              className={`${
+                activeLink === link.url ? "bg-primary-800" : ""
+              } p-4 px-8`}
+              onClick={() => onLinkClick && onLinkClick(link.url)}
             >
               {link.name}
             </Link>
