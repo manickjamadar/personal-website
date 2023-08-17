@@ -2,8 +2,7 @@ import React from "react";
 import { MdOutlineClose } from "react-icons/md";
 import Spacer from "./spacer";
 import Logo from "./logo";
-import navLinks, { INavLink } from "../data/navLinks";
-import Link from "next/link";
+import { INavLink } from "../data/navLinks";
 import LinkPath from "../utils/linkPath";
 import SocialLinks from "./socialLinks";
 interface Props {
@@ -39,7 +38,7 @@ const Drawer: React.FC<Props> = ({
         <Spacer vertical={20} />
         <nav className="flex flex-col">
           {links.map((link) => (
-            <Link
+            <a
               key={link.name}
               href={link.url}
               className={`${
@@ -48,7 +47,7 @@ const Drawer: React.FC<Props> = ({
               onClick={() => onLinkClick && onLinkClick(link.url)}
             >
               {link.name}
-            </Link>
+            </a>
           ))}
         </nav>
       </div>

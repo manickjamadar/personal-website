@@ -3,9 +3,7 @@ import React, { useState } from "react";
 import Logo from "../logo";
 import navLinks from "@/app/data/navLinks";
 import { RiMenu4Fill } from "react-icons/ri";
-import Link from "next/link";
 import Drawer from "../drawer";
-import { usePathname, useRouter } from "next/navigation";
 import LinkPath from "@/app/utils/linkPath";
 const Header = () => {
   const [drawerVisible, setDrawerVisible] = useState(false);
@@ -23,7 +21,7 @@ const Header = () => {
         <div className="gap-8 items-center hidden min-[900px]:flex">
           <nav className="flex gap-6 ">
             {navLinks.map((link) => (
-              <Link
+              <a
                 key={link.name}
                 href={link.url}
                 className={`${
@@ -34,7 +32,7 @@ const Header = () => {
                 onClick={() => onLinkClick(link.url)}
               >
                 {link.name}
-              </Link>
+              </a>
             ))}
             <a href={LinkPath.resume} target="_blank">
               Resume
