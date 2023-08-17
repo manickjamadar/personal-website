@@ -3,12 +3,10 @@ import React, { useState } from "react";
 import Logo from "../logo";
 import navLinks from "@/app/data/navLinks";
 import { RiMenu4Fill } from "react-icons/ri";
-import { MdOutlineClose } from "react-icons/md";
-import Spacer from "../spacer";
-import SocialLinks from "../socialLinks";
 import Link from "next/link";
-import LinkPath from "@/app/utils/linkPath";
 import Drawer from "../drawer";
+import { usePathname, useRouter } from "next/navigation";
+import LinkPath from "@/app/utils/linkPath";
 const Header = () => {
   const [drawerVisible, setDrawerVisible] = useState(false);
   const openDrawer = () => setDrawerVisible(true);
@@ -20,10 +18,13 @@ const Header = () => {
         <div className="gap-8 items-center hidden min-[900px]:flex">
           <nav className="flex gap-6 ">
             {navLinks.map((link) => (
-              <Link key={link.name} href={link.url} target={link.target}>
+              <Link key={link.name} href={link.url}>
                 {link.name}
               </Link>
             ))}
+            <a href={LinkPath.resume} target="_blank">
+              Resume
+            </a>
           </nav>
           <button className="primary-btn">Book Meeting</button>
         </div>
