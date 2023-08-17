@@ -5,7 +5,10 @@ import myTestimonials from "@/app/data/testimonials";
 
 const TestimonialSection = () => {
   return (
-    <div className="flex flex-col justify-center gap-8 items-center">
+    <div
+      id="testimonials"
+      className="flex flex-col justify-center gap-8 items-center"
+    >
       <SectionHeader
         title="Testimonials"
         subtitle="People I've worked with said something about me"

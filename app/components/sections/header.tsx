@@ -1,18 +1,18 @@
-import LinkPath from "@/app/utils/linkPath";
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import Logo from "../logo";
+import navLinks from "@/app/data/navLinks";
 
 const Header = () => {
   return (
     <div className="flex items-center justify-between">
-      <Image src={LinkPath.logo} width={50} height={50} alt="Main Logo" />
+      <Logo />
       <div className="flex gap-8 items-center">
         <nav className="flex gap-6 ">
-          <Link href={"/"}>Home</Link>
-          <Link href={"/"}>Skills</Link>
-          <Link href={"/"}>Work</Link>
-          <Link href={"/"}>Resume</Link>
+          {navLinks.map((link) => (
+            <a key={link.name} href={link.url} target={link.target}>
+              {link.name}
+            </a>
+          ))}
         </nav>
         <button className="primary-btn">Book Meeting</button>
       </div>
