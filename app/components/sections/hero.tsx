@@ -1,4 +1,6 @@
+import LinkPath from "@/app/utils/linkPath";
 import React from "react";
+import SocialLinks from "../socialLinks";
 
 const Hero = () => {
   return (
@@ -9,10 +11,13 @@ const Hero = () => {
         Full Stack Web Developer
       </h1>
       <p>I build real apps for users to solve real problems</p>
-      <div className="flex gap-4">
+      <div className="flex gap-4 flex-wrap justify-center">
         <button className="primary-btn">Book Meeting</button>
-        <button className="primary-outline-btn">See My Work</button>
+        <a href={LinkPath.projects} className="primary-outline-btn">
+          See My Work
+        </a>
       </div>
+      <SocialLinks />
     </div>
   );
 };
