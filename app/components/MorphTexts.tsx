@@ -108,7 +108,9 @@ const MorphTexts: React.FC<Props> = ({ texts, placeholder }) => {
           style={{
             lineHeight: 1.3,
           }}
-        ></div>
+        >
+          {texts[0]}
+        </div>
         <div
           id="text2"
           className="text-orange-gradient font-bold text-5xl sm:text-6xl md:text-7xl absolute top-0 bottom-0 w-full flex justify-center items-center"
