@@ -38,7 +38,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
       <div className="flex flex-col gap-4">
         <div className="flex flex-col items-start">
           <p className="text-primary uppercase text-sm font-bold">{category}</p>
-          <h3 className="text-2xl border-b-2 border-primary pb-2">{title}</h3>
+          <h3 className="text-2xl">{title}</h3>
         </div>
         <p className="text-gray-400 text-sm">{description}</p>
         <div className="flex gap-3">
