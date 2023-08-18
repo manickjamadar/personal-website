@@ -46,7 +46,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
           <p className="text-gray-400 text-sm">{description}</p>
         </div>
         <div className="flex flex-col gap-4">
-          <div className="flex gap-3">
+          <div className="flex gap-3 flex-wrap">
             {skills.map(({ icon, name, color }) => (
               <div
                 key={name}
