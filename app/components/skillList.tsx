@@ -9,6 +9,7 @@ const SkillList: React.FC<Props> = ({ skills }) => {
     <div className="flex gap-4 flex-wrap justify-center">
       {skills.map(({ color, icon, name }) => (
         <motion.div
+          whileHover={{ scale: 1.15 }}
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           exit={{ scale: 0 }}
@@ -19,7 +20,7 @@ const SkillList: React.FC<Props> = ({ skills }) => {
             color: color,
             fontSize: "27px",
           }}
-          className="p-4 rounded-full"
+          className="p-4 rounded-full cursor-pointer"
         >
           {icon}
         </motion.div>
