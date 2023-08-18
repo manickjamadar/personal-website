@@ -5,6 +5,7 @@ import Spacer from "./spacer";
 import { RxExternalLink } from "react-icons/rx";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
+import { Tooltip } from "react-tooltip";
 interface Props {
   project: IProject;
 }
@@ -12,8 +13,8 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
   const { category, description, imageUrl, skills, title, liveUrl, sourceUrl } =
     project;
   return (
-    <div className="p-8 bg-[#252537] rounded-lg border border-gray-600">
-      <div className="aspect-video relative rounded-lg overflow-clip bg-primary-950">
+    <div className="p-5 bg-[#252537] rounded-lg border border-gray-600">
+      <div className="aspect-square relative rounded-lg overflow-clip bg-primary-950">
         {imageUrl ? (
           <Image
             src={imageUrl}
@@ -37,15 +38,26 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
       <div className="flex flex-col gap-4">
         <div className="flex flex-col items-start">
           <p className="text-primary uppercase text-sm font-bold">{category}</p>
-          <h3 className="text-lg border-b-2 border-primary pb-2">{title}</h3>
+          <h3 className="text-2xl border-b-2 border-primary pb-2">{title}</h3>
         </div>
-        <p>{description}</p>
+        <p className="text-gray-400 text-sm">{description}</p>
         <div className="flex gap-3">
           {skills.map(({ icon, name, color }) => (
-            <div key={name} className="" style={{ color: color, fontSize: 20 }}>
+            <div
+              key={name}
+              className="cursor"
+              style={{ color: color, fontSize: 20 }}
+              data-tooltip-id="small-skill-tooltip"
+              data-tooltip-content={name}
+              data-tooltip-place="bottom"
+            >
               {icon}
             </div>
           ))}
+          <Tooltip
+            id="small-skill-tooltip"
+            style={{ backdropFilter: "blur(8px)", background: "#00000030" }}
+          />
         </div>
         <div className="flex gap-3">
           {liveUrl && (
