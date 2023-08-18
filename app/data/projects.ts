@@ -48,5 +48,15 @@ const myProjects: IProject[] = [
     imageUrl: LinkPath.promptylandImage,
     liveUrl: LinkPath.promptylandLive,
   },
+  {
+    category: ProjectCategory.webApp,
+    title: "Freedom Calculator",
+    description:
+      "It helps users to calculate the required savings to achieve financial freedom and effectively plan their path to financial independence",
+    skills: [Skill.typescript, Skill.reactJs, Skill.jest, Skill.netlify],
+    imageUrl: LinkPath.freedomCalculatorImage,
+    liveUrl: LinkPath.freedomCalculatorLive,
+    sourceUrl: LinkPath.freedomCalculatorSource,
+  },
 ];
 export default myProjects;

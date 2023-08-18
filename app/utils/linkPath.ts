@@ -16,5 +16,10 @@ class LinkPath {
   static personalWebsiteImage = "/assets/images/projects/personal-website.png";
   static promptylandLive = "https://promptyland.com";
   static promptylandImage = "/assets/images/projects/promptyland.png";
+  static freedomCalculatorLive = "https://freedomcalculator.manickjamadar.com";
+  static freedomCalculatorImage =
+    "/assets/images/projects/freedom-calculator.png";
+  static freedomCalculatorSource =
+    "https://github.com/manickjamadar/freedomcalculator";
 }
 export default LinkPath;
