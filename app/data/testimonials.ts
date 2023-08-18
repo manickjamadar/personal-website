@@ -22,6 +22,22 @@ const myTestimonials: ITestimonial[] = [
     quote:
       "Working with Manick was an absolute delight, and we eagerly anticipate the opportunity to collaborate with him once more. Undoubtedly, he exemplifies the type of designer",
   },
+  {
+    designation: "UI/UX Developer at Promptyland",
+    imageUrl: "/assets/images/profile-2.png",
+    name: "Adil Mirda",
+    profileUrl: "https://linkedin.com",
+    quote:
+      "Working with Manick was an absolute delight, and we eagerly anticipate the opportunity to collaborate with him once more. Undoubtedly, he exemplifies the type of designer",
+  },
+  {
+    designation: "Data Engineer at IBM",
+    imageUrl: "/assets/images/profile-2.png",
+    name: "Happy Sharma",
+    profileUrl: "https://linkedin.com",
+    quote:
+      "Working with Manick was an absolute delight, and we eagerly anticipate the opportunity to collaborate with him once more. Undoubtedly, he exemplifies the type of designer",
+  },
 ];
 
 export default myTestimonials;
