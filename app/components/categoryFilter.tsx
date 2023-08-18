@@ -1,18 +1,34 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 interface Props {
   categories: string[];
+  activeIndex?: number;
+  onClick?: (index: number) => void;
 }
-const CategoryFilter: React.FC<Props> = ({ categories }) => {
+const CategoryFilter: React.FC<Props> = ({
+  categories,
+  activeIndex = -1,
+  onClick,
+}) => {
   return (
     <div className="flex gap-4">
-      {/* <button className="primary-btn">All</button>
-      <button className="primary-outline-btn">Frontend</button>
-      <button className="primary-outline-btn">Backend</button>
-      <button className="primary-outline-btn">Other</button> */}
+      <button
+        className={`${
+          activeIndex < 0 || activeIndex >= categories.length
+            ? "primary-btn"
+            : "primary-outline-btn"
+        } capitalize`}
+        onClick={() => onClick && onClick(-1)}
+      >
+        All
+      </button>
       {categories.map((name, index) => (
         <button
           key={name}
-          className={`${index === 0 ? "primary-btn" : "primary-outline-btn"}`}
+          className={`${
+            activeIndex === index ? "primary-btn" : "primary-outline-btn"
+          } capitalize`}
+          onClick={() => onClick && onClick(index)}
         >
           {name}
         </button>

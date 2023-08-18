@@ -1,11 +1,21 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import SectionHeader from "../sectionHeader";
-import { FaNodeJs } from "react-icons/fa";
-import { SiFirebase } from "react-icons/si";
 import SkillList from "../skillList";
 import CategoryFilter from "../categoryFilter";
-import mySkills from "@/app/data/skills";
+import mySkills, { SkillCategory, skillCategories } from "@/app/data/skills";
+
 const SkillSection = () => {
+  const [activeCategoryIndex, setCategoryIndex] = useState(-1);
+  const categoryClickHandler = (index: number) => {
+    setCategoryIndex(index);
+  };
+  const filteredSkills =
+    activeCategoryIndex < 0 || activeCategoryIndex >= skillCategories.length
+      ? mySkills
+      : mySkills.filter(
+          (skill) => skill.category === skillCategories[activeCategoryIndex]
+        );
   return (
     <div className="flex flex-col gap-6 items-center">
       <SectionHeader
@@ -16,8 +26,12 @@ const SkillSection = () => {
         }
         subtitle="Check out my awesome creative skills"
       />
-      <CategoryFilter categories={["All", "Frontend", "Backend", "Other"]} />
-      <SkillList skills={mySkills} />
+      <CategoryFilter
+        categories={skillCategories}
+        activeIndex={activeCategoryIndex}
+        onClick={categoryClickHandler}
+      />
+      <SkillList skills={filteredSkills} />
     </div>
   );
 };
