@@ -217,4 +217,5 @@ const mySkills: ISkill[] = [
   Skill.photoshop,
   Skill.figma,
 ];
+export const skillCategories = Object.values(SkillCategory);
 export default mySkills;
