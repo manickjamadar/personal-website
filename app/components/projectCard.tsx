@@ -66,15 +66,33 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
           </div>
           <div className="flex gap-3">
             {liveUrl && (
-              <Link href={liveUrl} target="_blank" className="icon-btn">
+              <Link
+                href={liveUrl}
+                target="_blank"
+                className="icon-btn"
+                data-tooltip-id="link-tooltip"
+                data-tooltip-content="Live"
+                data-tooltip-place="bottom"
+              >
                 <RxExternalLink />
               </Link>
             )}
             {sourceUrl && (
-              <Link href={sourceUrl} target="_blank" className="icon-btn">
+              <Link
+                href={sourceUrl}
+                target="_blank"
+                className="icon-btn"
+                data-tooltip-id="link-tooltip"
+                data-tooltip-content="Source"
+                data-tooltip-place="bottom"
+              >
                 <FaGithub />
               </Link>
             )}
+            <Tooltip
+              id="link-tooltip"
+              style={{ backdropFilter: "blur(8px)", background: "#00000030" }}
+            />
           </div>
         </div>
       </div>
