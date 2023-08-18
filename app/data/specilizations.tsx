@@ -24,6 +24,13 @@ const mySpecilizations: ISpecilization[] = [
       "A single-page application that helps filmmakers learn more about who their film might be suitable for.",
     icon: <MdDraw />,
   },
+  //Upcoming
+  //---------------------
+  //Mobile App Development
+  //Project Management
+  //Digital Marketing
+  //Content Creation
+  //Entrepreneurship
 ];
 
 export default mySpecilizations;
