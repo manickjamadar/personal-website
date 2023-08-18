@@ -9,7 +9,11 @@ const SkillSection = () => {
   return (
     <div className="flex flex-col gap-6 items-center">
       <SectionHeader
-        title="My Creative Skills"
+        title={
+          <span>
+            My Creative <span className="text-orange-gradient">Skills</span>
+          </span>
+        }
         subtitle="Check out my awesome creative skills"
       />
       <CategoryFilter categories={["All", "Frontend", "Backend", "Other"]} />
