@@ -13,7 +13,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
   const { category, description, imageUrl, skills, title, liveUrl, sourceUrl } =
     project;
   return (
-    <div className="p-5 bg-primary-800 bg-opacity-10 backdrop-filter backdrop-blur-sm rounded-lg border border-gray-700 flex flex-col">
+    <div className="max-w-sm p-5 bg-primary-800 bg-opacity-10 backdrop-filter backdrop-blur-sm rounded-lg border border-gray-700 flex flex-col">
       <div className="aspect-square relative rounded-lg overflow-clip bg-primary-950">
         {imageUrl ? (
           <Image
