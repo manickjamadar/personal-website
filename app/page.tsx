@@ -52,9 +52,9 @@ const HomePage = () => {
   return (
     <div>
       <div
-        className={`fixed top-0 left-0 w-full ${
+        className={`fixed top-0 left-0 w-full z-50 ${
           scrolled &&
-          "bg-primary-500 bg-opacity-10 z-50 backdrop-filter backdrop-blur-xl border-b border-white/10"
+          "bg-primary-500 bg-opacity-10 backdrop-filter backdrop-blur-xl border-b border-white/10"
         }`}
       >
         <Header activeLink={activeLink} />
