@@ -4,7 +4,7 @@ import SpecilizationCard from "../specilizationCard";
 import mySpecilizations from "@/app/data/specilizations";
 const SpecilizationSection = () => {
   return (
-    <div className="flex gap-12 flex-col">
+    <div className="flex gap-12 flex-col items-center">
       <SectionHeader
         title="Specilizations"
         subtitle="I am specilized in various types of skills"

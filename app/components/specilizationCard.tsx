@@ -7,7 +7,7 @@ const SpecilizationCard: React.FC<Props> = ({ specilization }) => {
   const { description, icon, title } = specilization;
   return (
     <div
-      className="mx-auto flex flex-col gap-4 max-w-xs items-start border border-slate-50 border-opacity-5 backdrop-filter backdrop-blur-sm rounded-md p-6"
+      className="flex flex-col gap-4 max-w-xs items-start border border-slate-50 border-opacity-5 backdrop-filter backdrop-blur-sm rounded-md p-6"
       style={{
         background: specilization.color + "08",
       }}
