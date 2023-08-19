@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { ISpecilization } from "../data/specilizations";
 interface Props {
@@ -6,12 +7,22 @@ interface Props {
 const SpecilizationCard: React.FC<Props> = ({ specilization }) => {
   const { description, icon, title } = specilization;
   return (
-    <div
+    <motion.div
       className="flex flex-col gap-4 max-w-xs items-start border border-slate-50 border-opacity-5 backdrop-filter backdrop-blur-sm rounded-md p-6"
-      style={{
-        background: `linear-gradient(45deg, ${
-          specilization.color + "08"
-        } 70%, ${specilization.color + "26"} 100%)`,
+      transition={{
+        repeat: Infinity,
+        duration: 10,
+        ease: "linear",
+      }}
+      animate={{
+        background: [
+          `linear-gradient(0deg, ${specilization.color + "08"} 70%, ${
+            specilization.color + "26"
+          } 100%)`,
+          `linear-gradient(360deg, ${specilization.color + "08"} 70%, ${
+            specilization.color + "26"
+          } 100%)`,
+        ],
       }}
     >
       <div
@@ -26,7 +37,7 @@ const SpecilizationCard: React.FC<Props> = ({ specilization }) => {
       </div>
       <h3 className="text-lg font-medium text-gray-200">{title}</h3>
       <p className="text-sm text-gray-400">{description}</p>
-    </div>
+    </motion.div>
   );
 };
 
