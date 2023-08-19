@@ -30,15 +30,19 @@ const Header: React.FC<Props> = ({ activeLink = "/#", onLinkClick }) => {
                   href={link.url}
                   className={`${
                     activeLink === link.url
-                      ? "border-b-2 border-primary-500 pb-1"
-                      : "text-white"
-                  }`}
+                      ? "text-white"
+                      : "text-[#a1a1a1] hover:text-white transition duration-300"
+                  } text-sm`}
                   onClick={() => linkClickHandler(link.url)}
                 >
                   {link.name}
                 </a>
               ))}
-              <a href={LinkPath.resume} target="_blank">
+              <a
+                href={LinkPath.resume}
+                target="_blank"
+                className="text-[#a1a1a1] text-sm hover:text-white transition duration-300"
+              >
                 Resume
               </a>
             </nav>
