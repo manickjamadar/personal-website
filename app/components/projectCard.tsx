@@ -13,7 +13,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
   const { category, description, imageUrl, skills, title, liveUrl, sourceUrl } =
     project;
   return (
-    <div className="p-5 bg-[#252537] rounded-lg border border-gray-700 flex flex-col">
+    <div className="p-5 bg-primary-800 bg-opacity-10 backdrop-filter backdrop-blur-sm rounded-lg border border-gray-700 flex flex-col">
       <div className="aspect-square relative rounded-lg overflow-clip bg-primary-950">
         {imageUrl ? (
           <Image
@@ -35,7 +35,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         )}
       </div>
       <Spacer vertical={20} />
-      <div className="flex flex-col gap-4 flex-1 justify-between">
+      <div className="flex flex-col gap-4 flex-1 justify-between px-4">
         <div className="flex flex-col gap-3">
           <div className="flex flex-col items-start">
             <p className="text-primary uppercase text-sm font-bold">
