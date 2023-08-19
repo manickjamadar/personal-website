@@ -3,10 +3,12 @@ import Logo from "../logo";
 import Link from "next/link";
 import LinkPath from "@/app/utils/linkPath";
 import SocialLinks from "../socialLinks";
+import ContactSection from "./contactSection";
 const Footer = () => {
   return (
-    <div className="bg-primary-900">
-      <div className="p-12 flex flex-col items-center gap-6">
+    <div className="bg-primary-900 relative z-10">
+      <ContactSection />
+      <div className="p-12 pt-44 flex flex-col items-center gap-6">
         <Logo />
         <h2 className="text-3xl">Manick Jamadar</h2>
         <p className="text-slate-300">

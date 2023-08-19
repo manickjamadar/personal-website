@@ -84,6 +84,7 @@ const HomePage = () => {
           <Spacer vertical={90} />
           <FAQSection />
         </section>
+        <Spacer vertical={150} />
       </Container>
       <SideNav links={navLinks} activeLink={activeLink} />
     </div>
