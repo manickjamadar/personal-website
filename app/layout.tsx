@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="background">
-          <div className="mesh-gradient"></div>
+          <div className="mesh-gradient-1"></div>
         </div>
         <div className="app">
           <div className="main">{children}</div>

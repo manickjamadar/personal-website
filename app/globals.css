@@ -24,27 +24,28 @@ body {
 }
 
 
-/* .mesh-gradient {
+.mesh-gradient-1 {
   content: "";
     position: absolute;
     top: 0;
   z-index: 3;
   background-image: radial-gradient(
       at 27% 37%,
-      rgb(30, 30, 37) 0px,
+      hsla(215, 98%, 61%, 1) 0px,
       transparent 0%
     ),
-    radial-gradient(at 62% 99%, hsla(201, 88%, 69%, 1) 0, hsla(201, 88%, 69%, 0) 50%),
-radial-gradient(at 90% 21%, hsla(224, 88%, 62%, 1) 0, hsla(224, 88%, 62%, 0) 50%),
-radial-gradient(at 49% 46%, hsla(166, 85%, 63%, 1) 0, hsla(166, 85%, 63%, 0) 50%),
-radial-gradient(at 87% 93%, hsla(204, 93%, 57%, 1) 0, hsla(204, 93%, 57%, 0) 50%),
-radial-gradient(at 97% 6%, hsla(234, 95%, 68%, 1) 0, hsla(234, 95%, 68%, 0) 50%),
-radial-gradient(at 35% 67%, hsla(261, 91%, 65%, 1) 0, hsla(261, 91%, 65%, 0) 50%);
+    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
   width: 100%;
   height: 100%;
+  max-width: 640px;
   filter: blur(100px) saturate(100%);
   opacity: 0.15;
-} */
+}
 
 .app{
   @apply z-10 relative min-h-screen flex flex-col justify-between;
