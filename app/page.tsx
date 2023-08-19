@@ -10,6 +10,8 @@ import ProjectSection from "./components/sections/projectSection";
 import TestimonialSection from "./components/sections/testimonialSection";
 import FAQSection from "./components/sections/faqSection";
 import ContactSection from "./components/sections/contactSection";
+import SideNav from "./components/sideNav";
+import navLinks from "./data/navLinks";
 
 const HomePage = () => {
   const [activeLink, setActiveLink] = useState("/#");
@@ -87,6 +89,7 @@ const HomePage = () => {
           <ContactSection />
         </section>
       </Container>
+      <SideNav links={navLinks} activeLink={activeLink} />
     </div>
   );
 };
