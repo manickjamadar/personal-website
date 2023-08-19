@@ -15,7 +15,7 @@ body {
   @apply w-screen min-h-screen fixed flex justify-center pointer-events-none;
 }
 .background:before {
-  @apply content-[""] z-10 absolute w-full h-full opacity-30;
+  @apply content-[""] z-10 absolute w-full h-full opacity-25;
   background-image: url("/assets/images/grid.svg");
 }
 .background:after {
