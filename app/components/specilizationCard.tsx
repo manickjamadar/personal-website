@@ -9,11 +9,13 @@ const SpecilizationCard: React.FC<Props> = ({ specilization }) => {
     <div
       className="flex flex-col gap-4 max-w-xs items-start border border-slate-50 border-opacity-5 backdrop-filter backdrop-blur-sm rounded-md p-6"
       style={{
-        background: specilization.color + "08",
+        background: `linear-gradient(45deg, ${
+          specilization.color + "08"
+        } 70%, ${specilization.color + "26"} 100%)`,
       }}
     >
       <div
-        className="text-xl p-3 bg-primary bg-opacity-10 text-primary border border-primary rounded-full"
+        className="text-xl p-3 border rounded-full"
         style={{
           background: specilization.color + "20",
           borderColor: specilization.color,
