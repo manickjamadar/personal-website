@@ -8,7 +8,7 @@ interface Props {
 const SideNav: React.FC<Props> = ({ links, activeLink = "/#" }) => {
   return (
     <>
-      <div className="hidden md:flex flex-col gap-4 fixed right-10 xl:right-20 top-1/2 translate-x-1/2 z-90">
+      <div className="hidden md:flex flex-col gap-4 fixed right-10 xl:right-20 top-1/2 translate-x-1/2 z-20">
         {links.map(({ name, url }) => (
           <a
             key={name}

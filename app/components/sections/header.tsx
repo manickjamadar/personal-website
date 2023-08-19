@@ -18,36 +18,38 @@ const Header: React.FC<Props> = ({ activeLink = "/#", onLinkClick }) => {
     onLinkClick && onLinkClick(url);
   };
   return (
-    <div className="w-full mx-auto max-w-7xl px-8 sm:px-16 md:px-24 py-4 ">
-      <div className="flex items-center justify-between">
-        <Logo />
-        <div className="gap-8 items-center hidden min-[900px]:flex">
-          <nav className="flex gap-6 ">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.url}
-                className={`${
-                  activeLink === link.url
-                    ? "border-b-2 border-primary-500 pb-1"
-                    : "text-white"
-                }`}
-                onClick={() => linkClickHandler(link.url)}
-              >
-                {link.name}
+    <>
+      <div className="w-full mx-auto max-w-7xl px-8 sm:px-16 md:px-24 py-4 ">
+        <div className="flex items-center justify-between">
+          <Logo />
+          <div className="gap-8 items-center hidden min-[900px]:flex">
+            <nav className="flex gap-6 ">
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.url}
+                  className={`${
+                    activeLink === link.url
+                      ? "border-b-2 border-primary-500 pb-1"
+                      : "text-white"
+                  }`}
+                  onClick={() => linkClickHandler(link.url)}
+                >
+                  {link.name}
+                </a>
+              ))}
+              <a href={LinkPath.resume} target="_blank">
+                Resume
               </a>
-            ))}
-            <a href={LinkPath.resume} target="_blank">
-              Resume
-            </a>
-          </nav>
-          <button className="primary-btn">Book Meeting</button>
-        </div>
-        <div
-          className="text-white text-3xl min-[900px]:hidden cursor-pointer"
-          onClick={openDrawer}
-        >
-          <RiMenu4Fill />
+            </nav>
+            <button className="primary-btn">Book Meeting</button>
+          </div>
+          <div
+            className="text-white text-3xl min-[900px]:hidden cursor-pointer"
+            onClick={openDrawer}
+          >
+            <RiMenu4Fill />
+          </div>
         </div>
       </div>
       <Drawer
@@ -57,7 +59,7 @@ const Header: React.FC<Props> = ({ activeLink = "/#", onLinkClick }) => {
         activeLink={activeLink}
         visible={drawerVisible}
       />
-    </div>
+    </>
   );
 };
 
