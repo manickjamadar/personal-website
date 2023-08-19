@@ -11,7 +11,7 @@ const CategoryFilter: React.FC<Props> = ({
   onClick,
 }) => {
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 flex-wrap justify-center">
       <button
         className={`${
           activeIndex < 0 || activeIndex >= categories.length
