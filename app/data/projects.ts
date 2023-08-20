@@ -24,6 +24,7 @@ const myProjects: IProject[] = [
     skills: [
       Skill.typescript,
       Skill.reactJs,
+      Skill.framerMotion,
       Skill.nextJs,
       Skill.tailwind,
       Skill.vercel,
@@ -40,6 +41,7 @@ const myProjects: IProject[] = [
     skills: [
       Skill.typescript,
       Skill.reactJs,
+      Skill.framerMotion,
       Skill.nextJs,
       Skill.tailwind,
       Skill.mongodb,

@@ -6,6 +6,7 @@ import {
   FaGitAlt,
   FaGithub,
 } from "react-icons/fa";
+import { TbBrandFramerMotion } from "react-icons/tb";
 import {
   SiFirebase,
   SiRedux,
@@ -67,6 +68,12 @@ export class Skill {
     name: "ReactJs",
     icon: <FaReact />,
     color: "#5ED3F3",
+    category: SkillCategory.frontend,
+  };
+  static framerMotion: ISkill = {
+    name: "Framer Motion",
+    icon: <TbBrandFramerMotion />,
+    color: "#F008BB",
     category: SkillCategory.frontend,
   };
   static redux: ISkill = {
@@ -197,6 +204,7 @@ const mySkills: ISkill[] = [
   Skill.javascript,
   Skill.typescript,
   Skill.reactJs,
+  Skill.framerMotion,
   Skill.redux,
   Skill.tailwind,
   Skill.nextJs,
