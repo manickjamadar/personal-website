@@ -4,6 +4,7 @@ import SectionHeader from "../sectionHeader";
 import SkillList from "../skillList";
 import CategoryFilter from "../categoryFilter";
 import mySkills, { SkillCategory, skillCategories } from "@/app/data/skills";
+import Spacer from "../spacer";
 
 const SkillSection = () => {
   const [activeCategoryIndex, setCategoryIndex] = useState(-1);
@@ -17,7 +18,7 @@ const SkillSection = () => {
           (skill) => skill.category === skillCategories[activeCategoryIndex]
         );
   return (
-    <div className="flex flex-col gap-6 items-center">
+    <div className="flex flex-col gap-8 items-center">
       <SectionHeader
         title={
           <span>
