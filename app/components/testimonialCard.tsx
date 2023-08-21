@@ -16,7 +16,7 @@ const TestimonialCard: React.FC<Props> = ({ testimonial }) => {
         width={90}
         height={90}
         alt={`${name} Profile Picture`}
-        className="rounded-full object-cover border-4 border-primary-500 border-opacity-20 absolute -top-12"
+        className="rounded-full object-cover border-4 border-primary-500 border-opacity-20 absolute -top-0 -translate-y-1/2"
       />
       <Spacer vertical={26} />
       <div className="flex gap-3 items-center text-2xl">
