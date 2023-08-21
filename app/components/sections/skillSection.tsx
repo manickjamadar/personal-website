@@ -21,10 +21,10 @@ const SkillSection = () => {
       <SectionHeader
         title={
           <span>
-            My Creative <span className="text-orange-gradient">Skills</span>
+            Creative <span className="text-orange-gradient">Skills</span>
           </span>
         }
-        subtitle="Check out my awesome creative skills"
+        subtitle="Adapting and Upgrading myself by learning new skills is my no. 1 skill"
       />
       <CategoryFilter
         categories={skillCategories}
