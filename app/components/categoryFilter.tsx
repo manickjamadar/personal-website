@@ -11,12 +11,12 @@ const CategoryFilter: React.FC<Props> = ({
   onClick,
 }) => {
   return (
-    <div className="flex gap-4 flex-wrap justify-center">
+    <div className="flex gap-3 sm:gap-4 flex-wrap justify-center">
       <button
         className={`${
           activeIndex < 0 || activeIndex >= categories.length
-            ? "primary-btn"
-            : "primary-outline-btn"
+            ? "filter-active-btn"
+            : "filter-inactive-btn"
         } capitalize`}
         onClick={() => onClick && onClick(-1)}
       >
@@ -26,7 +26,7 @@ const CategoryFilter: React.FC<Props> = ({
         <button
           key={name}
           className={`${
-            activeIndex === index ? "primary-btn" : "primary-outline-btn"
+            activeIndex === index ? "filter-active-btn" : "filter-inactive-btn"
           } capitalize`}
           onClick={() => onClick && onClick(index)}
         >
