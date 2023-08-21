@@ -21,6 +21,13 @@ const HomePage = () => {
   const openDrawer = () => setDrawerVisible(true);
   const closeDrawer = () => setDrawerVisible(false);
   useEffect(() => {
+    if (drawerVisible) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [drawerVisible]);
+  useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section"); // Assuming your sections have the <section> tag
       const scrollPosition = window.scrollY;
