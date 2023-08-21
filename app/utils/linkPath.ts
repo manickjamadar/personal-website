@@ -21,5 +21,8 @@ class LinkPath {
     "/assets/images/projects/freedom-calculator.png";
   static freedomCalculatorSource =
     "https://github.com/manickjamadar/freedomcalculator";
+  static stepperLive = "https://stepper.manickjamadar.com";
+  static stepperImage = "/assets/images/projects/stepper.png";
+  static stepperSource = "https://github.com/manickjamadar/stepper";
 }
 export default LinkPath;

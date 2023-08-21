@@ -60,5 +60,21 @@ const myProjects: IProject[] = [
     liveUrl: LinkPath.freedomCalculatorLive,
     sourceUrl: LinkPath.freedomCalculatorSource,
   },
+  {
+    category: ProjectCategory.webApp,
+    title: "Stepper Challenge",
+    description:
+      "It helps users to calculate the required savings to achieve financial freedom and effectively plan their path to financial independence",
+    skills: [
+      Skill.html,
+      Skill.css,
+      Skill.sass,
+      Skill.javascript,
+      Skill.netlify,
+    ],
+    imageUrl: LinkPath.stepperImage,
+    liveUrl: LinkPath.stepperLive,
+    sourceUrl: LinkPath.stepperSource,
+  },
 ];
 export default myProjects;
