@@ -15,9 +15,9 @@ const SideNav: React.FC<Props> = ({ links, activeLink = "/#" }) => {
             href={url}
             className={`w-3 h-3 ${
               activeLink === url
-                ? "scale-125 rotate-45 bg-primary border-primary-800 rounded-sm"
-                : "border-2 border-slate-500 rounded-sm hover:bg-white hover:border-white hover:rotate-45"
-            } transition-all duration-300 cursor-pointer`}
+                ? "scale-110 rotate-45 bg-primary-500 rounded-sm border border-primary-400"
+                : "border border-white border-opacity-30 rounded-sm hover:bg-white hover:border-white hover:rotate-45 hover:-translate-y-[2px]"
+            } transition-all duration-200 cursor-pointer`}
             data-tooltip-id="side-nav-tooltip"
             data-tooltip-content={name}
             data-tooltip-place="left"
