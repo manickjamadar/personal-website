@@ -6,7 +6,7 @@ import MorphTexts from "../MorphTexts";
 const Hero = () => {
   return (
     <div className="flex flex-col items-center gap-6 text-center">
-      <p className="border border-primary-500 border-opacity-20 bg-primary-500 bg-opacity-10 text-sm sm:text-base px-8 py-2 sm:px-12 sm:py-2 rounded-full">
+      <p className="border border-primary-500 border-opacity-20 bg-primary-500 bg-opacity-5 text-sm sm:text-base px-8 py-2 sm:px-12 sm:py-2 rounded-full">
         Hello! 👋 My Name is
       </p>
       <h2 className="text-4xl md:text-5xl font-bold font-sans">
