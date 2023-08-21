@@ -5,9 +5,12 @@ interface Props {
 }
 const SectionHeader: React.FC<Props> = ({ title, subtitle }) => {
   return (
-    <div className="flex flex-col gap-3 items-center">
-      <h2 className="text-3xl border-b-4 border-primary pb-3">{title}</h2>
-      <p>{subtitle}</p>
+    <div className="flex flex-col gap-3 items-center text-center">
+      <div>
+        <h2 className="text-2xl sm:text-3xl mb-2">{title}</h2>
+        <div className="h-[3px] sm:h-[4px] bg-gradient-to-r from-transparent via-primary-500 to-transparent"></div>
+      </div>
+      <p className="text-slate-400">{subtitle}</p>
     </div>
   );
 };
