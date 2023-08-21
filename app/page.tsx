@@ -12,10 +12,14 @@ import FAQSection from "./components/sections/faqSection";
 import ContactSection from "./components/sections/contactSection";
 import SideNav from "./components/sideNav";
 import navLinks from "./data/navLinks";
+import Drawer from "./components/drawer";
 
 const HomePage = () => {
   const [activeLink, setActiveLink] = useState("/#");
   const [scrolled, setScrolled] = useState(false);
+  const [drawerVisible, setDrawerVisible] = useState(false);
+  const openDrawer = () => setDrawerVisible(true);
+  const closeDrawer = () => setDrawerVisible(false);
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section"); // Assuming your sections have the <section> tag
@@ -57,7 +61,7 @@ const HomePage = () => {
           "bg-primary-500 bg-opacity-10 backdrop-filter backdrop-blur-xl border-b border-white/10"
         }`}
       >
-        <Header activeLink={activeLink} />
+        <Header activeLink={activeLink} onMenuClick={openDrawer} />
       </div>
       <Container>
         <section id="home">
@@ -86,6 +90,13 @@ const HomePage = () => {
         </section>
         <Spacer vertical={150} />
       </Container>
+      <Drawer
+        links={navLinks}
+        onClose={closeDrawer}
+        onLinkClick={closeDrawer}
+        activeLink={activeLink}
+        visible={drawerVisible}
+      />
       <SideNav links={navLinks} activeLink={activeLink} />
     </div>
   );
