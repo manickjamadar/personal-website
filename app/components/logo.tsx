@@ -3,10 +3,17 @@ import React from "react";
 import LinkPath from "../utils/linkPath";
 interface Props {
   size?: number;
+  className?: string;
 }
-const Logo: React.FC<Props> = ({ size = 50 }) => {
+const Logo: React.FC<Props> = ({ size = 50, className }) => {
   return (
-    <Image src={LinkPath.logo} width={size} height={size} alt="Manick Logo" />
+    <Image
+      src={LinkPath.logo}
+      width={size}
+      height={size}
+      alt="Manick Logo"
+      className={className}
+    />
   );
 };
 
