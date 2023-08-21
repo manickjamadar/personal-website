@@ -10,18 +10,22 @@ const SkillList: React.FC<Props> = ({ skills }) => {
     <div className="flex gap-4 flex-wrap justify-center">
       {skills.map(({ color, icon, name }) => (
         <motion.div
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.1, translateY: "-4px" }}
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           exit={{ scale: 0 }}
-          transition={{ duration: 0.2 }}
+          transition={{
+            type: "spring",
+            duration: 0.5,
+            bounce: 0.6,
+          }}
           key={name}
           style={{
             backgroundColor: color + "20",
             color: color,
             fontSize: "27px",
           }}
-          className="p-4 rounded-full cursor-pointer"
+          className="p-4 rounded-full"
           data-tooltip-id="skill-tooltip"
           data-tooltip-content={name}
           data-tooltip-place="bottom"
