@@ -104,7 +104,7 @@ const MorphTexts: React.FC<Props> = ({ texts, placeholder }) => {
       >
         <div
           id="text1"
-          className="text-orange-gradient font-bold text-5xl sm:text-6xl md:text-7xl absolute top-0 bottom-0 w-full flex justify-center items-center"
+          className="font-sans text-orange-gradient font-bold text-5xl sm:text-6xl md:text-7xl absolute top-0 bottom-0 w-full flex justify-center items-center"
           style={{
             lineHeight: 1.3,
           }}
@@ -113,14 +113,14 @@ const MorphTexts: React.FC<Props> = ({ texts, placeholder }) => {
         </div>
         <div
           id="text2"
-          className="text-orange-gradient font-bold text-5xl sm:text-6xl md:text-7xl absolute top-0 bottom-0 w-full flex justify-center items-center"
+          className="font-sans text-orange-gradient font-bold text-5xl sm:text-6xl md:text-7xl absolute top-0 bottom-0 w-full flex justify-center items-center"
           style={{
             lineHeight: 1.3,
           }}
         ></div>
       </div>
       <div
-        className="font-bold text-5xl sm:text-6xl md:text-7xl text-transparent"
+        className="font-sans font-bold text-5xl sm:text-6xl md:text-7xl text-transparent"
         style={{
           lineHeight: 1.3,
         }}
