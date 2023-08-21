@@ -35,10 +35,10 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         )}
       </div>
       <Spacer vertical={20} />
-      <div className="flex flex-col gap-4 flex-1 justify-between px-4">
+      <div className="flex flex-col gap-4 flex-1 justify-between">
         <div className="flex flex-col gap-3">
-          <div className="flex flex-col items-start">
-            <p className="text-primary uppercase text-sm font-bold">
+          <div className="flex flex-col items-start gap-2">
+            <p className="uppercase text-xs font-bold border border-orange-500 border-opacity-50 text-orange-500 px-3 py-1 rounded-full bg-orange-800 bg-opacity-20">
               {category}
             </p>
             <h3 className="text-2xl">{title}</h3>
