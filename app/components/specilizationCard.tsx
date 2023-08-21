@@ -8,7 +8,7 @@ const SpecilizationCard: React.FC<Props> = ({ specilization }) => {
   const { description, icon, title } = specilization;
   return (
     <motion.div
-      className="flex flex-col gap-4 max-w-xs items-start border border-slate-50 border-opacity-5 backdrop-filter backdrop-blur-sm rounded-md p-6"
+      className="flex flex-col gap-4 max-w-sm items-start border border-slate-50 border-opacity-5 backdrop-filter backdrop-blur-sm rounded-md p-6"
       transition={{
         repeat: Infinity,
         duration: 10,
