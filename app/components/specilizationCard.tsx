@@ -17,10 +17,10 @@ const SpecilizationCard: React.FC<Props> = ({ specilization }) => {
       animate={{
         background: [
           `linear-gradient(0deg, ${specilization.color + "08"} 70%, ${
-            specilization.color + "26"
+            specilization.color + "34"
           } 100%)`,
           `linear-gradient(360deg, ${specilization.color + "08"} 70%, ${
-            specilization.color + "26"
+            specilization.color + "34"
           } 100%)`,
         ],
       }}
