@@ -26,7 +26,7 @@ const Drawer: React.FC<Props> = ({
       initial={{ x: "100%" }}
       animate={{ x: visible ? "0%" : "100%" }}
       transition={{ duration: 0.2, ease: "easeInOut" }}
-      className="fixed top-0 right-0 w-full h-screen  max-w-md z-[999] bg-background bg-opacity-90 flex flex-col justify-between py-6 backdrop-filter backdrop-blur"
+      className="overflow-auto fixed top-0 right-0 w-full h-screen  max-w-md z-[999] bg-background bg-opacity-90 flex flex-col justify-between py-6 backdrop-filter backdrop-blur"
     >
       <div>
         <div
