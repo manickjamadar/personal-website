@@ -26,7 +26,7 @@ const Drawer: React.FC<Props> = ({
       initial={{ x: "100%" }}
       animate={{ x: visible ? "0%" : "100%" }}
       transition={{ duration: 0.2, ease: "easeInOut" }}
-      className="fixed top-0 right-0 w-full h-screen  max-w-md z-[999] bg-primary-900 flex flex-col justify-between py-6"
+      className="fixed top-0 right-0 w-full h-screen  max-w-md z-[999] bg-background bg-opacity-90 flex flex-col justify-between py-6 backdrop-filter backdrop-blur"
     >
       <div>
         <div
@@ -38,8 +38,8 @@ const Drawer: React.FC<Props> = ({
         <Spacer vertical={20} />
         <div className="flex flex-col items-center gap-3 px-6">
           <Logo />
-          <h2 className="text-center text-3xl">Manick Jamadar</h2>
-          <p className="text-center text-sm">
+          <h2 className="text-center text-3xl font-bold">Manick Jamadar</h2>
+          <p className="text-center text-sm text-gray-300">
             I build real apps for real users to solve real problems
           </p>
         </div>
@@ -50,7 +50,7 @@ const Drawer: React.FC<Props> = ({
               key={link.name}
               href={link.url}
               className={`${
-                activeLink === link.url ? "bg-primary-800" : ""
+                activeLink === link.url ? "bg-primary-500 bg-opacity-20" : ""
               } p-4 px-8`}
               onClick={() => onLinkClick && onLinkClick(link.url)}
             >
@@ -59,15 +59,17 @@ const Drawer: React.FC<Props> = ({
           ))}
         </nav>
       </div>
-      <div className="flex flex-col items-center gap-4">
-        <button className="primary-btn">Book Meeting</button>
-        <a
-          href={LinkPath.resume}
-          target="_blank"
-          className="primary-outline-btn"
-        >
-          Resume
-        </a>
+      <div className="flex flex-col items-center gap-6">
+        <div className="flex flex-col gap-6">
+          <button className="primary-btn self-stretch">Book Meeting</button>
+          <a
+            href={LinkPath.resume}
+            target="_blank"
+            className="primary-outline-btn self-stretch"
+          >
+            Resume
+          </a>
+        </div>
         <SocialLinks />
       </div>
     </motion.div>
