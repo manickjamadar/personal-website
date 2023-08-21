@@ -10,21 +10,21 @@ const mySpecilizations: ISpecilization[] = [
   {
     title: "Frontend Development",
     description:
-      "A single-page application that helps filmmakers learn more about who their film might be suitable for.",
+      "Experienced in expertly crafting user-centric and responsive frontend apps for seamless digital experiences",
     icon: <GoDeviceDesktop />,
     color: "#bd3a71",
   },
   {
     title: "Backend Development",
     description:
-      "A single-page application that helps filmmakers learn more about who their film might be suitable for.",
+      "Proficient in creating robust and efficient server-side solutions for seamless application functionality",
     icon: <GoDatabase />,
     color: "#6655D0",
   },
   {
     title: "UI/UX Design",
     description:
-      "A single-page application that helps filmmakers learn more about who their film might be suitable for.",
+      "Passionate about crafting captivating designs that seamlessly blend aesthetics and functionality for exceptional user experiences",
     icon: <HiOutlinePaintBrush />,
     color: "#0284C7",
   },
