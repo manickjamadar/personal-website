@@ -5,6 +5,7 @@ import {
   FaReact,
   FaGitAlt,
   FaGithub,
+  FaSass,
 } from "react-icons/fa";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import {
@@ -50,6 +51,12 @@ export class Skill {
     name: "CSS",
     icon: <FaCss3Alt />,
     color: "#1A6FB4",
+    category: SkillCategory.frontend,
+  };
+  static sass: ISkill = {
+    name: "Sass",
+    icon: <FaSass />,
+    color: "#CF649A",
     category: SkillCategory.frontend,
   };
   static javascript: ISkill = {
@@ -201,6 +208,7 @@ export class Skill {
 const mySkills: ISkill[] = [
   Skill.html,
   Skill.css,
+  Skill.sass,
   Skill.javascript,
   Skill.typescript,
   Skill.reactJs,
