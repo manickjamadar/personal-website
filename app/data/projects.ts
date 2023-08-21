@@ -1,8 +1,8 @@
 import LinkPath from "../utils/linkPath";
 import { ISkill, Skill } from "./skills";
 export enum ProjectCategory {
-  mobileApp = "Mobile App",
-  webApp = "Web App",
+  mobileApp = "Mobile",
+  webApp = "Web",
   design = "UI/UX",
   package = "Package",
 }
