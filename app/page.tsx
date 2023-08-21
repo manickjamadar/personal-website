@@ -71,12 +71,12 @@ const HomePage = () => {
         <Header activeLink={activeLink} onMenuClick={openDrawer} />
       </div>
       <Container>
-        <section id="home">
-          <Spacer vertical={120} />
+        <section id="home" className="pt-24 sm:pt-28 md:pt-32">
+          {/* <Spacer vertical={150} /> */}
           <Hero />
         </section>
-        <section>
-          <Spacer vertical={90} />
+        <section className="pt-32 sm:pt-36 md:pt-40">
+          {/* <Spacer vertical={120} /> */}
           <SpecilizationSection />
         </section>
         <section id="skills">
