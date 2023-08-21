@@ -51,7 +51,7 @@ const Drawer: React.FC<Props> = ({
               href={link.url}
               className={`${
                 activeLink === link.url ? "bg-primary-500 bg-opacity-20" : ""
-              } p-4 px-8`}
+              } px-8 py-4 text-sm`}
               onClick={() => onLinkClick && onLinkClick(link.url)}
             >
               {link.name}
