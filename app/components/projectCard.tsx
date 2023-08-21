@@ -13,8 +13,8 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
   const { category, description, imageUrl, skills, title, liveUrl, sourceUrl } =
     project;
   return (
-    <div className="max-w-sm p-5 bg-primary-800 bg-opacity-10 backdrop-filter backdrop-blur-sm rounded-lg border border-gray-700 flex flex-col">
-      <div className="aspect-square relative rounded-lg overflow-clip bg-primary-950">
+    <div className="glass max-w-sm p-5 rounded-lg flex flex-col">
+      <div className="aspect-square relative rounded-lg overflow-clip bg-background">
         {imageUrl ? (
           <Image
             src={imageUrl}
@@ -59,10 +59,6 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
                 {icon}
               </div>
             ))}
-            <Tooltip
-              id="small-skill-tooltip"
-              style={{ backdropFilter: "blur(8px)", background: "#00000030" }}
-            />
           </div>
           <div className="flex gap-3">
             {liveUrl && (
@@ -89,10 +85,6 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
                 <FaGithub />
               </Link>
             )}
-            <Tooltip
-              id="link-tooltip"
-              style={{ backdropFilter: "blur(8px)", background: "#00000030" }}
-            />
           </div>
         </div>
       </div>
