@@ -72,27 +72,21 @@ const HomePage = () => {
       </div>
       <Container>
         <section id="home" className="pt-24 sm:pt-28 md:pt-32">
-          {/* <Spacer vertical={150} /> */}
           <Hero />
         </section>
-        <section className="pt-32 sm:pt-36 md:pt-40">
-          {/* <Spacer vertical={120} /> */}
+        <section className="section-spacing">
           <SpecilizationSection />
         </section>
-        <section id="skills">
-          <Spacer vertical={90} />
+        <section id="skills" className="section-spacing">
           <SkillSection />
         </section>
-        <section id="projects">
-          <Spacer vertical={90} />
+        <section id="projects" className="section-spacing">
           <ProjectSection />
         </section>
-        <section id="testimonials">
-          <Spacer vertical={90} />
+        <section id="testimonials" className="section-spacing">
           <TestimonialSection />
         </section>
-        <section id="faq">
-          <Spacer vertical={90} />
+        <section id="faq" className="section-spacing">
           <FAQSection />
         </section>
         <Spacer vertical={150} />
