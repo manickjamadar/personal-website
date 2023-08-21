@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,7 +10,7 @@ html{
 }
 body {
   scroll-behavior: smooth;
-  @apply text-white bg-primary-950 z-0;
+  @apply text-white bg-background z-0 font-nunito;
 }
 .background {
   @apply w-screen min-h-screen fixed flex justify-center pointer-events-none;
