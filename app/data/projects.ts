@@ -64,7 +64,7 @@ const myProjects: IProject[] = [
     category: ProjectCategory.webApp,
     title: "Stepper Challenge",
     description:
-      "It helps users to calculate the required savings to achieve financial freedom and effectively plan their path to financial independence",
+      "I have participated in stepper coding challenge conducted by Colt Steele on his youtube channel. It was a great learning experience",
     skills: [
       Skill.html,
       Skill.css,
