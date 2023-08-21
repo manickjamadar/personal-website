@@ -10,7 +10,7 @@ const SectionHeader: React.FC<Props> = ({ title, subtitle }) => {
         <h2 className="text-2xl sm:text-3xl mb-2">{title}</h2>
         <div className="h-[3px] sm:h-[4px] bg-gradient-to-r from-transparent via-primary-500 to-transparent"></div>
       </div>
-      <p className="text-slate-400">{subtitle}</p>
+      <p className="text-slate-400 max-w-xs">{subtitle}</p>
     </div>
   );
 };
