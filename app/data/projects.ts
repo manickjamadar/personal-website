@@ -76,5 +76,15 @@ const myProjects: IProject[] = [
     liveUrl: LinkPath.stepperLive,
     sourceUrl: LinkPath.stepperSource,
   },
+  {
+    category: ProjectCategory.webApp,
+    title: "Css Injector",
+    description:
+      "Inject css rules to style tag of document head dynamically with javascript. User can select whether to insert to top or not also",
+    skills: [Skill.javascript, Skill.npm],
+    imageUrl: LinkPath.cssInjectorImage,
+    liveUrl: LinkPath.cssInjectorLive,
+    sourceUrl: LinkPath.cssInjectorSource,
+  },
 ];
 export default myProjects;

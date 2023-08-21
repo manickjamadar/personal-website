@@ -24,5 +24,9 @@ class LinkPath {
   static stepperLive = "https://stepper.manickjamadar.com";
   static stepperImage = "/assets/images/projects/stepper.png";
   static stepperSource = "https://github.com/manickjamadar/stepper";
+  static cssInjectorLive =
+    "https://www.npmjs.com/package/@creanick/cssinjector";
+  static cssInjectorImage = "/assets/images/projects/css-injector.png";
+  static cssInjectorSource = "https://github.com/manickjamadar/cssInjector";
 }
 export default LinkPath;

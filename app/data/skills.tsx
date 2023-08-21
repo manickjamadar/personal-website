@@ -6,6 +6,7 @@ import {
   FaGitAlt,
   FaGithub,
   FaSass,
+  FaNpm,
 } from "react-icons/fa";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import {
@@ -190,6 +191,12 @@ export class Skill {
     name: "Netlify",
     icon: <SiNetlify />,
     color: "#0DBFBC",
+    category: SkillCategory.other,
+  };
+  static npm: ISkill = {
+    name: "NPM",
+    icon: <FaNpm />,
+    color: "#CD3E3D",
     category: SkillCategory.other,
   };
   static photoshop: ISkill = {
