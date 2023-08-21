@@ -28,5 +28,9 @@ class LinkPath {
     "https://www.npmjs.com/package/@creanick/cssinjector";
   static cssInjectorImage = "/assets/images/projects/css-injector.png";
   static cssInjectorSource = "https://github.com/manickjamadar/cssInjector";
+  static changeDefaultLive = "https://www.npmjs.com/package/change-default";
+  static changeDefaultImage = "/assets/images/projects/change-default.png";
+  static changeDefaultSource =
+    "https://github.com/manickjamadar/change-default";
 }
 export default LinkPath;

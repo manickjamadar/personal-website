@@ -4,6 +4,7 @@ export enum ProjectCategory {
   mobileApp = "Mobile App",
   webApp = "Web App",
   design = "UI/UX",
+  package = "Package",
 }
 export interface IProject {
   category: ProjectCategory;
@@ -77,7 +78,7 @@ const myProjects: IProject[] = [
     sourceUrl: LinkPath.stepperSource,
   },
   {
-    category: ProjectCategory.webApp,
+    category: ProjectCategory.package,
     title: "Css Injector",
     description:
       "Inject css rules to style tag of document head dynamically with javascript. User can select whether to insert to top or not also",
@@ -85,6 +86,16 @@ const myProjects: IProject[] = [
     imageUrl: LinkPath.cssInjectorImage,
     liveUrl: LinkPath.cssInjectorLive,
     sourceUrl: LinkPath.cssInjectorSource,
+  },
+  {
+    category: ProjectCategory.package,
+    title: "Change Default",
+    description:
+      "It helps to Convert exports.default to module.exports for all .js files in specified directories recursively",
+    skills: [Skill.javascript, Skill.npm],
+    imageUrl: LinkPath.changeDefaultImage,
+    liveUrl: LinkPath.changeDefaultLive,
+    sourceUrl: LinkPath.changeDefaultSource,
   },
 ];
 export default myProjects;
