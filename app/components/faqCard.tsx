@@ -30,8 +30,8 @@ const FAQCard: React.FC<Props> = ({ faq, active, onClick }) => {
       <p
         className={`${
           active
-            ? "bg-primary-500 bg-opacity-10"
-            : "bg-primary-500 bg-opacity-5 hover:bg-opacity-10"
+            ? "bg-primary-500 bg-opacity-10 text-slate-100"
+            : "bg-primary-500 bg-opacity-5 hover:bg-opacity-10 hover:text-slate-100 text-slate-300"
         } backdrop-filter backdrop-blur-sm px-6 py-4 flex justify-between items-center cursor-pointer transition duration-300 text-sm sm:text-base`}
         onClick={clickHandler}
       >
