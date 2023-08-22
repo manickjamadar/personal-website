@@ -26,21 +26,26 @@ const FAQCard: React.FC<Props> = ({ faq, active, onClick }) => {
     }
   }, [active]);
   return (
-    <div className="rounded overflow-clip">
+    <div className="rounded overflow-clip border border-slate-50 border-opacity-5">
       <p
         className={`${
-          active ? "bg-primary-600" : "bg-primary-900"
-        } hover:bg-primary-600 p-6 flex justify-between items-center cursor-pointer transition duration-300`}
+          active
+            ? "bg-primary-500 bg-opacity-10"
+            : "bg-primary-500 bg-opacity-5 hover:bg-opacity-10"
+        } backdrop-filter backdrop-blur-sm px-6 py-4 flex justify-between items-center cursor-pointer transition duration-300 text-sm sm:text-base`}
         onClick={clickHandler}
       >
         {question}
-        <span className="text-lg">{active ? <BiMinus /> : <MdAdd />}</span>
+        <span className="text-lg pl-4">{active ? <BiMinus /> : <MdAdd />}</span>
       </p>
       <div
         className="bg-primary bg-opacity-50 origin-top transition-all duration-300"
         style={{ maxHeight: panelHeight }}
       >
-        <p className="p-6" ref={answerPanel}>
+        <p
+          className="px-6 py-4 bg-primary-500 bg-opacity-[0.03] backdrop-filter backdrop-blur-sm text-sm sm:text-base text-slate-400"
+          ref={answerPanel}
+        >
           {answer}
         </p>
       </div>
