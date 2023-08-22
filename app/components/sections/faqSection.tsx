@@ -34,7 +34,7 @@ const FAQSection = () => {
       {isMoreFAQAvailable && (
         <div className="flex justify-center">
           <button
-            className="text-sm px-5 py-2 bg-primary-500 bg-opacity-10 rounded-full hover:bg-opacity-20 transition-all duration-200 cursor-pointer text-slate-300"
+            className="text-sm px-5 py-2 bg-primary-500 bg-opacity-10 rounded-full hover:bg-opacity-20 transition-all duration-200 cursor-pointer text-slate-300 hover:text-white"
             onClick={moreFAQClickHandler}
           >
             More FAQ
