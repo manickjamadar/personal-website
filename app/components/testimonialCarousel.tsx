@@ -28,8 +28,10 @@ const TestimonialCarousel: React.FC<Props> = ({ testimonials }) => {
       <TestimonialCard testimonial={activeTestimonial} />
       <div className="flex gap-4 items-center">
         <div
-          className={`p-2 rounded-full text-white transition duration-300 ${
-            isPrevAvailable ? "bg-primary-600 cursor-pointer" : "bg-slate-700"
+          className={`p-2 rounded-full transition duration-200 ${
+            isPrevAvailable
+              ? "bg-primary-500 bg-opacity-80 hover:bg-opacity-100 active:scale-90 cursor-pointer text-white"
+              : "bg-slate-700 bg-opacity-60 text-slate-400"
           }`}
           onClick={prev}
         >
@@ -41,14 +43,16 @@ const TestimonialCarousel: React.FC<Props> = ({ testimonials }) => {
             className={`w-2 h-2 rounded-full cursor-pointer transition-all duration-300 ${
               activeTestimonialIndex === i
                 ? "bg-primary-500 scale-125"
-                : "bg-gray-700"
+                : "bg-gray-700 hover:bg-gray-500"
             } `}
             onClick={() => setActiveTestimonialIndex(i)}
           ></div>
         ))}
         <div
-          className={`p-2 rounded-full text-white transition duration-300 ${
-            isNextAvailable ? "bg-primary-600 cursor-pointer" : "bg-slate-700"
+          className={`p-2 rounded-full transition duration-200 ${
+            isNextAvailable
+              ? "bg-primary-500 bg-opacity-80 hover:bg-opacity-100 active:scale-90 cursor-pointer text-white"
+              : "bg-slate-700 bg-opacity-60 text-slate-400"
           }`}
           onClick={next}
         >
