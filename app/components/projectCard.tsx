@@ -41,7 +41,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
             <p className="uppercase text-xs font-bold border border-orange-500 border-opacity-50 text-orange-500 px-3 py-1 rounded-full bg-orange-800 bg-opacity-20">
               {category}
             </p>
-            <h3 className="text-2xl">{title}</h3>
+            <h3 className="text-xl sm:text-2xl">{title}</h3>
           </div>
           <p className="text-gray-400 text-sm">{description}</p>
         </div>
