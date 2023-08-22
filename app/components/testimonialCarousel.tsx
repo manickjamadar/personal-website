@@ -24,7 +24,7 @@ const TestimonialCarousel: React.FC<Props> = ({ testimonials }) => {
     return null;
   }
   return (
-    <div className="flex flex-col items-center gap-6">
+    <div className="flex flex-col items-center gap-6 text-center">
       <TestimonialCard testimonial={activeTestimonial} />
       <div className="flex gap-4 items-center">
         <div
