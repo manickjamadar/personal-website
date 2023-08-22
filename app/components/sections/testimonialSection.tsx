@@ -9,7 +9,7 @@ const TestimonialSection = () => {
     <div className="flex flex-col justify-center gap-24 items-center">
       <SectionHeader
         title="Testimonials"
-        subtitle="People I've worked with said something about me"
+        subtitle="People love to work with me because of my positive attitude"
       />
       <TestimonialCarousel testimonials={myTestimonials} />
     </div>
