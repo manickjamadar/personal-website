@@ -33,7 +33,10 @@ const FAQSection = () => {
       <Spacer vertical={20} />
       {isMoreFAQAvailable && (
         <div className="flex justify-center">
-          <button className="filter-inactive-btn" onClick={moreFAQClickHandler}>
+          <button
+            className="text-sm px-5 py-2 bg-primary-500 bg-opacity-10 rounded-full hover:bg-opacity-20 transition-all duration-200 cursor-pointer text-slate-300"
+            onClick={moreFAQClickHandler}
+          >
             More FAQ
           </button>
         </div>
