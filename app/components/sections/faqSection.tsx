@@ -15,7 +15,7 @@ const FAQSection = () => {
     <div>
       <SectionHeader
         title="Frequently Asked Questions"
-        subtitle="If you have any questions about me here is the answers"
+        subtitle="If you have questions in mind then you are in the right section"
       />
       <Spacer vertical={30} />
       <div className="flex flex-col gap-1">
@@ -33,7 +33,7 @@ const FAQSection = () => {
       <Spacer vertical={20} />
       {isMoreFAQAvailable && (
         <div className="flex justify-center">
-          <button className="primary-outline-btn" onClick={moreFAQClickHandler}>
+          <button className="filter-inactive-btn" onClick={moreFAQClickHandler}>
             More FAQ
           </button>
         </div>
