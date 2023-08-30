@@ -1,8 +1,6 @@
+import Footer from "./components/sections/footer";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Manick Jamadar - Full Stack Developer",
@@ -17,7 +15,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <div className="background">
+          <div className="mesh-gradient-1"></div>
+        </div>
+        <div className="app">
+          <div className="main">{children}</div>
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }
