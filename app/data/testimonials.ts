@@ -1,3 +1,5 @@
+import LinkPath from "../utils/linkPath";
+
 export interface ITestimonial {
   name: string;
   designation: string;
@@ -9,34 +11,17 @@ export interface ITestimonial {
 const myTestimonials: ITestimonial[] = [
   {
     designation: "Founder & CEO at Nessvel",
-    imageUrl: "/assets/images/profile-1.png",
+    imageUrl: LinkPath.subhadipMaityProfileImage,
     name: "Subhadip Maity",
     quote:
-      "Manick was a real pleasure to work with and we look forward to working with him again. He's definitely the kind of designer you can trust with a project from start to finish",
+      "Manick Jamadar is an exceptional software developer at Nessvel IT Services. His technical brilliance, innovative solutions, and collaborative spirit consistently propel our projects to unparalleled success. A true asset to our team",
   },
   {
-    designation: "UI/UX designer at Promptyland",
-    imageUrl: "/assets/images/profile-2.png",
+    designation: "Freelance UI/UX designer",
+    imageUrl: LinkPath.nasrinKhatunProfileImage,
     name: "Nasrin Khatun",
-    profileUrl: "https://linkedin.com",
     quote:
-      "Working with Manick was an absolute delight, and we eagerly anticipate the opportunity to collaborate with him once more. Undoubtedly, he exemplifies the type of designer",
-  },
-  {
-    designation: "UI/UX Developer at Promptyland",
-    imageUrl: "/assets/images/profile-2.png",
-    name: "Adil Mirda",
-    profileUrl: "https://linkedin.com",
-    quote:
-      "Working with Manick was an absolute delight, and we eagerly anticipate the opportunity to collaborate with him once more. Undoubtedly, he exemplifies the type of designer",
-  },
-  {
-    designation: "Data Engineer at IBM",
-    imageUrl: "/assets/images/profile-2.png",
-    name: "Happy Sharma",
-    profileUrl: "https://linkedin.com",
-    quote:
-      "Working with Manick was an absolute delight, and we eagerly anticipate the opportunity to collaborate with him once more. Undoubtedly, he exemplifies the type of designer",
+      "Manick Jamadar's UI/UX designs are inspiring and exceptional. His attention to detail, user-centric approach, and ability to transform ideas into captivating interfaces make working together an absolute delight",
   },
 ];
 
