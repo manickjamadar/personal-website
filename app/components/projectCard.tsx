@@ -69,6 +69,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
                 data-tooltip-id="link-tooltip"
                 data-tooltip-content="Live"
                 data-tooltip-place="bottom"
+                aria-label={title + " Live Url"}
               >
                 <RxExternalLink />
               </Link>
@@ -81,6 +82,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
                 data-tooltip-id="link-tooltip"
                 data-tooltip-content="Source"
                 data-tooltip-place="bottom"
+                aria-label={title + "Source Url"}
               >
                 <FaGithub />
               </Link>

@@ -32,6 +32,7 @@ const Header: React.FC<Props> = ({
                     : "text-zinc-400 hover:text-white transition duration-200"
                 } text-sm font-semibold`}
                 onClick={() => onLinkClick && onLinkClick(link.url)}
+                aria-label={link.name + " Section Link"}
               >
                 {link.name}
               </a>
@@ -40,6 +41,7 @@ const Header: React.FC<Props> = ({
               href={LinkPath.resume}
               target="_blank"
               className="text-zinc-400 text-sm hover:text-white transition duration-300"
+              aria-label="Resume"
             >
               Resume
             </a>
@@ -48,6 +50,7 @@ const Header: React.FC<Props> = ({
             href={LinkPath.bookMeeting}
             target="_blank"
             className="primary-btn"
+            aria-label="Book Meeting"
           >
             Book Meeting
           </a>

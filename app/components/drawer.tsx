@@ -53,6 +53,7 @@ const Drawer: React.FC<Props> = ({
                 activeLink === link.url ? "bg-primary-500 bg-opacity-20" : ""
               } px-8 py-4 text-sm`}
               onClick={() => onLinkClick && onLinkClick(link.url)}
+              aria-label={link.name + " Section"}
             >
               {link.name}
             </a>
@@ -65,6 +66,7 @@ const Drawer: React.FC<Props> = ({
             href={LinkPath.bookMeeting}
             target="_blank"
             className="primary-btn self-stretch"
+            aria-label="Book Meeting"
           >
             Book Meeting
           </a>
@@ -72,6 +74,7 @@ const Drawer: React.FC<Props> = ({
             href={LinkPath.resume}
             target="_blank"
             className="primary-outline-btn self-stretch"
+            aria-label="Resume"
           >
             Resume
           </a>
