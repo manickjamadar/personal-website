@@ -38,7 +38,7 @@ const myProjects: IProject[] = [
     category: ProjectCategory.webApp,
     title: "Personal Website",
     description:
-      "It's a digital mirror reflecting my devotion to software developement and design. Explore my journey, projects, and skills all in one sleek virtual space",
+      "It's a digital mirror reflecting my devotion to software development and design. Explore my journey, projects, and skills all in one sleek virtual space",
     skills: [
       Skill.typescript,
       Skill.reactJs,
