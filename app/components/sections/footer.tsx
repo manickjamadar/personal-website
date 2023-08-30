@@ -16,7 +16,12 @@ const Footer = () => {
               I build real apps for real users to solve real problems
             </p>
           </div>
-          <a className="primary-btn" href={LinkPath.resume} download={true}>
+          <a
+            className="primary-btn"
+            href={LinkPath.resume}
+            download={true}
+            aria-label="Download Resume"
+          >
             Download Resume
           </a>
           <SocialLinks />

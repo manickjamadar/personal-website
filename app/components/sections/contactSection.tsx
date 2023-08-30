@@ -19,8 +19,9 @@ const ContactSection = () => {
           href={LinkPath.bookMeeting}
           target="_blank"
           className="primary-outline-btn"
+          aria-label="Book Meeting"
         >
-          Book a Meeting
+          Book Meeting
         </a>
       </div>
     </div>

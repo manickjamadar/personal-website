@@ -19,10 +19,19 @@ const Hero = () => {
         I build real apps for real users to solve real problems
       </p>
       <div className="flex gap-4 flex-wrap justify-center">
-        <a href={LinkPath.bookMeeting} target="_blank" className="primary-btn">
+        <a
+          href={LinkPath.bookMeeting}
+          target="_blank"
+          className="primary-btn"
+          aria-label="Book Meeting"
+        >
           Book Meeting
         </a>
-        <a href={LinkPath.projects} className="primary-outline-btn">
+        <a
+          href={LinkPath.projects}
+          className="primary-outline-btn"
+          aria-label="See My Work"
+        >
           See My Work
         </a>
       </div>

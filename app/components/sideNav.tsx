@@ -21,6 +21,7 @@ const SideNav: React.FC<Props> = ({ links, activeLink = "/#" }) => {
             data-tooltip-id="side-nav-tooltip"
             data-tooltip-content={name}
             data-tooltip-place="left"
+            aria-label={name + " Section"}
           ></a>
         ))}
       </div>

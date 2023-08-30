@@ -16,6 +16,7 @@ const SocialLinks = () => {
           className="p-2 text-slate-300 border border-slate-300 rounded-full hover:scale-105 hover:-translate-y-[2px] hover:border-white hover:text-white cursor-pointer transition-all duration-200 hover:shadow-[0_0px_5px_2px_rgba(255,255,255,0.2)]"
           href={url}
           target="_blank"
+          aria-label={name + " Link"}
         >
           {icon}
         </a>
