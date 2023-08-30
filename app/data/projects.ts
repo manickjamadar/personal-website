@@ -82,7 +82,7 @@ const myProjects: IProject[] = [
     title: "Css Injector",
     description:
       "Inject css rules to style tag of document head dynamically with javascript. User can select whether to insert to top or not also",
-    skills: [Skill.javascript, Skill.npm],
+    skills: [Skill.javascript, Skill.nodeJs, Skill.npm],
     imageUrl: LinkPath.cssInjectorImage,
     liveUrl: LinkPath.cssInjectorLive,
     sourceUrl: LinkPath.cssInjectorSource,
@@ -92,7 +92,7 @@ const myProjects: IProject[] = [
     title: "Change Default",
     description:
       "It helps to Convert exports.default to module.exports for all .js files in specified directories recursively",
-    skills: [Skill.javascript, Skill.npm],
+    skills: [Skill.javascript, Skill.nodeJs, Skill.npm],
     imageUrl: LinkPath.changeDefaultImage,
     liveUrl: LinkPath.changeDefaultLive,
     sourceUrl: LinkPath.changeDefaultSource,
