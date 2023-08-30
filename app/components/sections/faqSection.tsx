@@ -18,7 +18,7 @@ const FAQSection = () => {
     <div>
       <SectionHeader
         title="Frequently Asked Questions"
-        subtitle="Are you Curious to know more about me then you are in the right place"
+        subtitle="If you are curious to know more about me then you are in the right place"
       />
       <Spacer vertical={30} />
       <div className="flex flex-col gap-1">
