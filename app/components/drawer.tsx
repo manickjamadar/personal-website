@@ -61,7 +61,13 @@ const Drawer: React.FC<Props> = ({
       </div>
       <div className="flex flex-col items-center gap-6">
         <div className="flex flex-col gap-6">
-          <button className="primary-btn self-stretch">Book Meeting</button>
+          <a
+            href={LinkPath.bookMeeting}
+            target="_blank"
+            className="primary-btn self-stretch"
+          >
+            Book Meeting
+          </a>
           <a
             href={LinkPath.resume}
             target="_blank"

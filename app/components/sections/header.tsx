@@ -44,7 +44,13 @@ const Header: React.FC<Props> = ({
               Resume
             </a>
           </nav>
-          <button className="primary-btn">Book Meeting</button>
+          <a
+            href={LinkPath.bookMeeting}
+            target="_blank"
+            className="primary-btn"
+          >
+            Book Meeting
+          </a>
         </div>
         <div
           className="text-white text-2xl sm:text-3xl min-[900px]:hidden cursor-pointer"

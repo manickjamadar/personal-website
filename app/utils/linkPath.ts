@@ -32,5 +32,6 @@ class LinkPath {
   static changeDefaultImage = "/assets/images/projects/change-default.png";
   static changeDefaultSource =
     "https://github.com/manickjamadar/change-default";
+  static bookMeeting = "https://calendly.com/manickjamadar/meet-with-manick";
 }
 export default LinkPath;

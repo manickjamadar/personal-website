@@ -1,6 +1,6 @@
 import React from "react";
 import Spacer from "../spacer";
-import Container from "../Container";
+import LinkPath from "@/app/utils/linkPath";
 
 const ContactSection = () => {
   return (
@@ -15,7 +15,13 @@ const ContactSection = () => {
           share my knowledge
         </p>
         <Spacer vertical={30} />
-        <button className="primary-outline-btn">Book a Meeting</button>
+        <a
+          href={LinkPath.bookMeeting}
+          target="_blank"
+          className="primary-outline-btn"
+        >
+          Book a Meeting
+        </a>
       </div>
     </div>
   );
