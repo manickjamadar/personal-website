@@ -1,3 +1,4 @@
+import GoogleAnalytics from "./components/GoogleAnalytics";
 import Footer from "./components/sections/footer";
 import "./globals.css";
 import type { Metadata } from "next";
@@ -15,6 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <GoogleAnalytics trackingId={process.env.GA_TRACKING_CODE} />
       <body>
         <div className="background">
           <div className="mesh-gradient-1"></div>
