@@ -13,7 +13,7 @@ const Hero = () => {
         Manick Jamadar
       </h2>
       <MorphTexts
-        texts={["Full Stack Developer", "UI/UX Designer", "Problem Solver"]}
+        texts={["Front End Develoer", "UI/UX Designer", "Problem Solver"]}
       />
       <p className="text-gray-400 text-base sm:text-lg md:text-xl">
         I build real apps for real users to solve real problems
