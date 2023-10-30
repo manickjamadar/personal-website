@@ -36,6 +36,23 @@ const myProjects: IProject[] = [
   },
   {
     category: ProjectCategory.webApp,
+    title: "Blogskitter",
+    description:
+      "Blogskitter is an open platform where readers find dynamic thinking and where expert and undiscovered voices can share their writing on any topic",
+    skills: [
+      Skill.typescript,
+      Skill.reactJs,
+      Skill.nextJs,
+      Skill.tailwind,
+      Skill.firebase,
+      Skill.vercel,
+    ],
+    imageUrl: LinkPath.blogSkitterWebsiteImage,
+    liveUrl: LinkPath.blogSkitterWebsiteLive,
+    sourceUrl: LinkPath.blogSkitterWebsiteSource,
+  },
+  {
+    category: ProjectCategory.webApp,
     title: "Personal Website",
     description:
       "It's a digital mirror reflecting my devotion to software development and design. Explore my journey, projects, and skills all in one sleek virtual space",
@@ -87,15 +104,15 @@ const myProjects: IProject[] = [
     liveUrl: LinkPath.cssInjectorLive,
     sourceUrl: LinkPath.cssInjectorSource,
   },
-  {
-    category: ProjectCategory.package,
-    title: "Change Default",
-    description:
-      "It helps to Convert exports.default to module.exports for all .js files in specified directories recursively",
-    skills: [Skill.javascript, Skill.nodeJs, Skill.npm],
-    imageUrl: LinkPath.changeDefaultImage,
-    liveUrl: LinkPath.changeDefaultLive,
-    sourceUrl: LinkPath.changeDefaultSource,
-  },
+  // {
+  //   category: ProjectCategory.package,
+  //   title: "Change Default",
+  //   description:
+  //     "It helps to Convert exports.default to module.exports for all .js files in specified directories recursively",
+  //   skills: [Skill.javascript, Skill.nodeJs, Skill.npm],
+  //   imageUrl: LinkPath.changeDefaultImage,
+  //   liveUrl: LinkPath.changeDefaultLive,
+  //   sourceUrl: LinkPath.changeDefaultSource,
+  // },
 ];
 export default myProjects;
