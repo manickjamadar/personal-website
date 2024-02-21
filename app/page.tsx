@@ -83,9 +83,9 @@ const HomePage = () => {
         <section id="projects" className="section-spacing">
           <ProjectSection />
         </section>
-        <section id="testimonials" className="section-spacing">
+        {/* <section id="testimonials" className="section-spacing">
           <TestimonialSection />
-        </section>
+        </section> */}
         <section id="faq" className="section-spacing">
           <FAQSection />
         </section>

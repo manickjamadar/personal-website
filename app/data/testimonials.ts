@@ -10,13 +10,6 @@ export interface ITestimonial {
 
 const myTestimonials: ITestimonial[] = [
   {
-    designation: "Founder & CEO at Nessvel",
-    imageUrl: LinkPath.subhadipMaityProfileImage,
-    name: "Subhadip Maity",
-    quote:
-      "Manick Jamadar is an exceptional software developer at Nessvel IT Services. His technical brilliance, innovative solutions, and collaborative spirit consistently propel our projects to unparalleled success. A true asset to our team",
-  },
-  {
     designation: "Freelance UI/UX designer",
     imageUrl: LinkPath.nasrinKhatunProfileImage,
     name: "Nasrin Khatun",
