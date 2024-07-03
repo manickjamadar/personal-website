@@ -24,10 +24,10 @@ import {
   SiVercel,
   SiNetlify,
   SiAdobephotoshop,
-  SiFigma,
+  SiFigma
 } from "react-icons/si";
 import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
-import { GrMysql } from "react-icons/gr";
+import { GrMysql,GrGraphQl } from "react-icons/gr";
 import { TbBrandNextjs } from "react-icons/tb";
 export enum SkillCategory {
   frontend = "frontend",
@@ -113,6 +113,12 @@ export class Skill {
     name: "NodeJs",
     icon: <FaNodeJs />,
     color: "#58A149",
+    category: SkillCategory.backend,
+  };
+  static graphql:ISkill = {
+    name:"GraphQL",
+    icon: <GrGraphQl/>,
+    color:"#e10098",
     category: SkillCategory.backend,
   };
   static expressJS: ISkill = {
@@ -225,6 +231,7 @@ const mySkills: ISkill[] = [
   Skill.nextJs,
   Skill.materialUI,
   Skill.nodeJs,
+  Skill.graphQL,
   Skill.expressJS,
   Skill.socketIO,
   Skill.mongodb,
