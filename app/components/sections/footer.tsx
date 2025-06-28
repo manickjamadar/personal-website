@@ -16,14 +16,14 @@ const Footer = () => {
               I build real apps for real users to solve real problems
             </p>
           </div>
-          <a
+          {/* <a
             className="primary-btn"
             href={LinkPath.resume}
             download={true}
             aria-label="Download Resume"
           >
             Download Resume
-          </a>
+          </a> */}
           <SocialLinks />
         </div>
         <div className="p-4 border-t border-slate-50 border-opacity-5 bg flex flex-col md:flex-row item-center justify-between gap-3 text-sm text-slate-300">

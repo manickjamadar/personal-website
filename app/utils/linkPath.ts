@@ -18,7 +18,7 @@ class LinkPath {
   static blogSkitterWebsiteLive = "https://blogskitter.manickjamadar.com";
   static blogSkitterWebsiteSource =
     "https://github.com/manickjamadar/blogskitter";
-  static promptylandLive = "https://promptyland.com";
+  static promptylandLive = "https://promptyland.manickjamadar.com";
   static promptylandImage = "/assets/images/projects/promptyland.png";
   static freedomCalculatorLive = "https://freedomcalculator.manickjamadar.com";
   static freedomCalculatorImage =

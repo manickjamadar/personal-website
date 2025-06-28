@@ -37,14 +37,14 @@ const Header: React.FC<Props> = ({
                 {link.name}
               </a>
             ))}
-            <a
+            {/* <a
               href={LinkPath.resume}
               target="_blank"
               className="text-zinc-400 text-sm hover:text-white transition duration-300"
               aria-label="Resume"
             >
               Resume
-            </a>
+            </a> */}
           </nav>
           <a
             href={LinkPath.bookMeeting}
